@@ -20,5 +20,8 @@ Install VirtualBox and create the cybersecurity lab.
 - No issues
 
 ## Learnings
-- Understood how to create a virtual machine.
+- Understood how to use kali linux using oracle  virtual box.
+-understood Git command
+-connect git to git hub using cmd 
+-install vs code
 
