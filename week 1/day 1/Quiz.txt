@@ -1,0 +1,26 @@
+Day 1 Quiz
+
+MCQs
+
+1.  VirtualBox is: Answer: Virtualization Software
+
+2.  Kali Linux is mainly used for: Answer: Cybersecurity
+
+3.  Git is: Answer: Version Control System
+
+4.  GitHub is: Answer: Cloud platform for Git repositories
+
+5.  Default Kali username: Answer: kali
+
+Short Questions
+
+-   What is virtualization?
+-   Difference between Host and Guest OS?
+-   What is Git?
+-   What is GitHub?
+-   Why use VS Code?
+
+Practical
+
+-   Start Kali Linux.
+-   Run: git –version

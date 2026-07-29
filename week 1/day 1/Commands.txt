@@ -1,0 +1,79 @@
+Day 1 - Git Commands
+
+Check Git Version
+
+git –version
+
+Purpose: Verify Git installation.
+
+------------------------------------------------------------------------
+
+Initialize Repository
+
+git init
+
+Purpose: Create a hidden .git folder and initialize Git.
+
+------------------------------------------------------------------------
+
+Check Status
+
+git status
+
+Purpose: Show repository status.
+
+------------------------------------------------------------------------
+
+Stage Files
+
+git add .
+
+Purpose: Add all files to the staging area.
+
+------------------------------------------------------------------------
+
+Create Commit
+
+git commit -m “Day 1 Lab Setup”
+
+Purpose: Create a snapshot of staged files.
+
+------------------------------------------------------------------------
+
+Rename Branch
+
+git branch -M main
+
+Purpose: Rename current branch to main.
+
+------------------------------------------------------------------------
+
+Add Remote
+
+git remote add origin https://github.com//cyber-labs.git
+
+Purpose: Connect local repository with GitHub.
+
+------------------------------------------------------------------------
+
+Push
+
+git push -u origin main
+
+Purpose: Upload commits to GitHub.
+
+------------------------------------------------------------------------
+
+Pull
+
+git pull origin main
+
+Purpose: Download latest changes.
+
+------------------------------------------------------------------------
+
+Log
+
+git log
+
+Purpose: Display commit history.

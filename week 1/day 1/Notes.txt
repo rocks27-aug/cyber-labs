@@ -1,0 +1,29 @@
+Day 1 - Learning Notes
+
+Virtualization
+
+Virtualization allows multiple operating systems to run on one physical
+computer.
+
+Host OS -> VirtualBox -> Guest OS (Kali Linux)
+
+Oracle VirtualBox
+
+A free Type-2 hypervisor used to run virtual machines.
+
+Kali Linux
+
+A Debian-based Linux distribution for cybersecurity and penetration
+testing.
+
+Git
+
+A distributed version control system used to track changes.
+
+GitHub
+
+A cloud platform that hosts Git repositories.
+
+VS Code
+
+A lightweight code editor for programming and documentation.

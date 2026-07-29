@@ -1,0 +1,22 @@
+Glossary
+
+Virtualization - Running multiple operating systems on one physical
+computer.
+
+Hypervisor - Software that creates and manages virtual machines.
+
+Host OS - Operating system installed on the physical computer.
+
+Guest OS - Operating system running inside a virtual machine.
+
+Virtual Machine (VM) - Software-based computer.
+
+Git - Distributed Version Control System.
+
+GitHub - Cloud platform for Git repositories.
+
+Repository - Project managed by Git.
+
+Commit - Snapshot of project changes.
+
+Version Control - Tracking changes over time.

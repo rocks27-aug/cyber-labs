@@ -13,8 +13,8 @@ Install VirtualBox and create the cybersecurity lab.
 1. Installed Oracle virtual box
 2. extract Kali VM
 3. start kali using oracle virtual box
-3. Installed Git
-4. Installed VS Code
+4. Installed Git
+5. Installed VS Code
 
 ## Problems Faced
 - No issues

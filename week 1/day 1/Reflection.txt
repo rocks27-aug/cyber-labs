@@ -1,0 +1,10 @@
+Reflection - Day 1
+
+Time Spent: Approximately 3 Hours
+
+Learned: - Virtualization - Kali Linux Setup - Git Installation - VS
+Code Installation
+
+Revise: - Host vs Guest OS - Git Basics
+
+Questions: - Why Virtual Machines? - Difference between Git and GitHub?

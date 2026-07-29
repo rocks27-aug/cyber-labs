@@ -1,0 +1,13 @@
+Day 1 Resources
+
+Official Websites
+
+-   https://www.virtualbox.org/
+-   https://www.kali.org/
+-   https://git-scm.com/
+-   https://git-scm.com/doc
+-   https://docs.github.com/
+-   https://code.visualstudio.com/
+
+Topics - Virtualization - Virtual Machine - Host OS - Guest OS - Git -
+GitHub

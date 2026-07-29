@@ -1,0 +1,12 @@
+Screenshot Checklist
+
+-   VirtualBox Download
+-   VirtualBox Installation
+-   VirtualBox Manager
+-   Kali Download
+-   Kali Extract
+-   Kali Login
+-   Git Installation
+-   Git Bash
+-   VS Code Download
+-   VS Code Installation
