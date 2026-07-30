@@ -59,3 +59,33 @@ System.Runtime.InteropServices.ExternalException (0x800401D0): Requested Clipboa
 2026-07-30 12:19:50.574 - HotkeysConfig save successful: D:\cyber-labs\HotkeysConfig.json
 2026-07-30 12:19:50.616 - UploadersConfig save successful: D:\cyber-labs\UploadersConfig.json
 2026-07-30 12:19:50.706 - ApplicationConfig save successful: D:\cyber-labs\ApplicationConfig.json
+2026-07-30 14:54:59.202 - ShareX starting.
+2026-07-30 14:54:59.205 - Version: 21.0
+2026-07-30 14:54:59.205 - Build: MicrosoftStore
+2026-07-30 14:54:59.205 - Command line: "C:\Program Files\WindowsApps\19568ShareX.ShareX_21.0.0.0_x64__egrzcvs15399j\ShareX.dll"
+2026-07-30 14:54:59.205 - Personal path: D:\cyber-labs
+2026-07-30 14:54:59.205 - Personal path detection method: PersonalPath.cfg file (C:\Users\Admin\Documents\ShareX\PersonalPath.cfg)
+2026-07-30 14:54:59.206 - Operating system: Windows 10 Pro (64-bit)
+2026-07-30 14:54:59.207 - .NET version: 9.0.17
+2026-07-30 14:54:59.207 - Running as elevated process: False
+2026-07-30 14:54:59.279 - Flags: SilentRun
+2026-07-30 14:54:59.279 - Avalonia init started.
+2026-07-30 14:54:59.704 - Avalonia init finished.
+2026-07-30 14:54:59.727 - ApplicationConfig load started: D:\cyber-labs\ApplicationConfig.json
+2026-07-30 14:55:00.192 - ApplicationConfig load finished: D:\cyber-labs\ApplicationConfig.json
+2026-07-30 14:55:00.297 - Language changed to: English (India)
+2026-07-30 14:55:00.297 - MainForm init started.
+2026-07-30 14:55:00.297 - UploadersConfig load started: D:\cyber-labs\UploadersConfig.json
+2026-07-30 14:55:00.367 - UploadersConfig load finished: D:\cyber-labs\UploadersConfig.json
+2026-07-30 14:55:00.369 - HotkeysConfig load started: D:\cyber-labs\HotkeysConfig.json
+2026-07-30 14:55:00.392 - HotkeysConfig load finished: D:\cyber-labs\HotkeysConfig.json
+2026-07-30 14:55:00.846 - MainForm init finished.
+2026-07-30 14:55:00.945 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2026-07-30 14:55:00.945 - Hotkey registered: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-07-30 14:55:00.945 - Unable to register hotkey: Alt + Print Screen
+2026-07-30 14:55:00.945 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2026-07-30 14:55:00.945 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2026-07-30 14:55:00.945 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2026-07-30 15:10:07.250 - HotkeyManager started.
+2026-07-30 15:10:07.251 - WatchFolderManager started.
+2026-07-30 15:10:07.264 - Startup time: 908408 ms
