@@ -1,0 +1,44 @@
+Linux Basic Commands Lab
+
+  --------------------------------------------------------------------------------------
+  Command           Meaning           Purpose           Example
+  ----------------- ----------------- ----------------- --------------------------------
+  pwd               Print Working     Show current      pwd
+                    Directory         directory         
+
+  ls                List Directory    List              ls
+                    Contents          files/folders     
+
+  ls -l             Long Listing      Detailed file     ls -l
+                                      list              
+
+  ls -la            Long + All        Show hidden files ls -la
+
+  cd                Change Directory  Change folder     cd Desktop
+
+  cd ..             Parent Directory  Go one level up   cd ..
+
+  cd ~              Home Directory    Go to home folder cd ~
+
+  mkdir             Make Directory    Create folder     mkdir CyberLab
+
+  touch             Create File       Create empty file touch notes.txt
+
+  cp                Copy              Copy file         cp notes.txt backup.txt
+
+  mv                Move              Move/Rename file  mv backup.txt linux.txt
+
+  rm                Remove            Delete file       rm linux.txt
+
+  cat               Concatenate       View file content cat notes.txt
+
+  less              Pager             View file page by less notes.txt
+                                      page              
+
+  nano              Nano Editor       Edit file         nano notes.txt
+
+  chmod             Change Mode       Change            chmod 755 notes.txt
+                                      permissions       
+
+  chown             Change Owner      Change file owner sudo chown kali:kali notes.txt
+  --------------------------------------------------------------------------------------
