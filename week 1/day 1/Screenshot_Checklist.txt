@@ -10,3 +10,4 @@ Screenshot Checklist
 -   Git Bash
 -   VS Code Download
 -   VS Code Installation
+-   Linux basic commands
