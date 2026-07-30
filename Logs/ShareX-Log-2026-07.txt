@@ -1,0 +1,61 @@
+﻿2026-07-30 12:17:57.226 - ShareX starting.
+2026-07-30 12:17:57.229 - Version: 21.0
+2026-07-30 12:17:57.229 - Build: MicrosoftStore
+2026-07-30 12:17:57.229 - Command line: "C:\Program Files\WindowsApps\19568ShareX.ShareX_21.0.0.0_x64__egrzcvs15399j\ShareX.dll"
+2026-07-30 12:17:57.230 - Personal path: D:\cyber-labs
+2026-07-30 12:17:57.230 - Personal path detection method: PersonalPath.cfg file (C:\Users\Admin\Documents\ShareX\PersonalPath.cfg)
+2026-07-30 12:17:57.230 - Operating system: Windows 10 Pro (64-bit)
+2026-07-30 12:17:57.232 - .NET version: 9.0.17
+2026-07-30 12:17:57.232 - Running as elevated process: False
+2026-07-30 12:17:57.259 - Avalonia init started.
+2026-07-30 12:17:57.637 - Avalonia init finished.
+2026-07-30 12:17:57.646 - ApplicationConfig file does not exist: D:\cyber-labs\ApplicationConfig.json
+2026-07-30 12:17:57.646 - ApplicationConfig file does not exist: D:\cyber-labs\ApplicationConfig.json.temp
+2026-07-30 12:17:57.646 - ApplicationConfig file does not exist: D:\cyber-labs\Backup\ApplicationConfig.json
+2026-07-30 12:17:57.646 - Loading new ApplicationConfig instance.
+2026-07-30 12:17:57.836 - Language changed to: English (India)
+2026-07-30 12:17:57.836 - MainForm init started.
+2026-07-30 12:17:57.836 - UploadersConfig file does not exist: D:\cyber-labs\UploadersConfig.json
+2026-07-30 12:17:57.836 - UploadersConfig file does not exist: D:\cyber-labs\UploadersConfig.json.temp
+2026-07-30 12:17:57.836 - UploadersConfig file does not exist: D:\cyber-labs\Backup\UploadersConfig.json
+2026-07-30 12:17:57.836 - Loading new UploadersConfig instance.
+2026-07-30 12:17:57.846 - HotkeysConfig file does not exist: D:\cyber-labs\HotkeysConfig.json
+2026-07-30 12:17:57.846 - HotkeysConfig file does not exist: D:\cyber-labs\HotkeysConfig.json.temp
+2026-07-30 12:17:57.846 - HotkeysConfig file does not exist: D:\cyber-labs\Backup\HotkeysConfig.json
+2026-07-30 12:17:57.846 - Loading new HotkeysConfig instance.
+2026-07-30 12:17:58.292 - MainForm init finished.
+2026-07-30 12:17:58.412 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2026-07-30 12:17:58.412 - Hotkey registered: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-07-30 12:17:58.412 - Unable to register hotkey: Alt + Print Screen
+2026-07-30 12:17:58.412 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2026-07-30 12:17:58.412 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2026-07-30 12:17:58.412 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2026-07-30 12:18:02.324 - HotkeyManager started.
+2026-07-30 12:18:02.325 - WatchFolderManager started.
+2026-07-30 12:18:02.352 - Startup time: 5429 ms
+2026-07-30 12:18:36.737 - Hotkey triggered. Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-07-30 12:18:36.739 - Executing: Capture entire screen
+2026-07-30 12:18:36.833 - Task in queue. Job: Job, Type: Image, Host: 
+2026-07-30 12:18:36.914 - Task status: Preparing
+2026-07-30 12:18:38.966 - Clipboard copy image failed.:
+System.Runtime.InteropServices.ExternalException (0x800401D0): Requested Clipboard operation did not succeed.
+   at System.Windows.Forms.Clipboard.SetDataObject(Object data, Boolean copy, Int32 retryTimes, Int32 retryDelay)
+   at ShareX.HelpersLib.ClipboardHelpers.CopyData(IDataObject data, Boolean copy)
+   at ShareX.HelpersLib.ClipboardHelpers.CopyImageDefaultFillBackground(Image img, Color background)
+   at ShareX.HelpersLib.ClipboardHelpers.CopyImage(Image img, String fileName)
+2026-07-30 12:18:38.966 - Image copied to clipboard.
+2026-07-30 12:18:39.009 - Image saved to file: D:\cyber-labs\Screenshots\2026-07\s0NJYzN4HA.png
+2026-07-30 12:18:39.035 - Task completed. File name: s0NJYzN4HA.png, Duration: 2119 ms
+2026-07-30 12:18:41.799 - Hotkey triggered. Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-07-30 12:18:41.799 - Executing: Capture entire screen
+2026-07-30 12:18:41.848 - Task in queue. Job: Job, Type: Image, Host: 
+2026-07-30 12:18:41.865 - Task status: Preparing
+2026-07-30 12:18:41.920 - Image copied to clipboard.
+2026-07-30 12:18:41.961 - Image saved to file: D:\cyber-labs\Screenshots\2026-07\WtYN8AmDuJ.png
+2026-07-30 12:18:41.987 - Task completed. File name: WtYN8AmDuJ.png, Duration: 122 ms
+2026-07-30 12:19:50.483 - ApplicationConfig save started: D:\cyber-labs\ApplicationConfig.json
+2026-07-30 12:19:50.483 - UploadersConfig save started: D:\cyber-labs\UploadersConfig.json
+2026-07-30 12:19:50.484 - HotkeysConfig save started: D:\cyber-labs\HotkeysConfig.json
+2026-07-30 12:19:50.574 - HotkeysConfig save successful: D:\cyber-labs\HotkeysConfig.json
+2026-07-30 12:19:50.616 - UploadersConfig save successful: D:\cyber-labs\UploadersConfig.json
+2026-07-30 12:19:50.706 - ApplicationConfig save successful: D:\cyber-labs\ApplicationConfig.json
