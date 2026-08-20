@@ -1,0 +1,34 @@
+WEEK 1 — DAY 2 TO DAY 7
+LINUX FUNDAMENTALS REFLECTION
+
+Answer briefly after completing the practical lab.
+
+1. What does `pwd` show?
+
+2. What is the difference between `ls`, `ls -l` and `ls -la`?
+
+3. What is the difference between an absolute path and a relative path?
+
+4. What does `cd ..` do?
+
+5. What is the difference between `mkdir` and `touch`?
+
+6. What is the difference between `cp` and `mv`?
+
+7. Why should `rm` be used carefully?
+
+8. What is the difference between `cat` and `less`?
+
+9. What did you edit using `nano`?
+
+10. What do r, w and x mean?
+
+11. What does `chmod 755` represent?
+
+12. What is the purpose of `chown`?
+
+13. Which command was easiest for you?
+
+14. Which command needs more practice?
+
+15. What error or warning did you encounter, if any?

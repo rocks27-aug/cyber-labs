@@ -1,0 +1,314 @@
+
+============================================================
+START — Linux Fundamentals Lab
+============================================================
+
+============================================================
+1. pwd — Print Working Directory
+============================================================
+
+$ pwd
+/home/kali
+
+
+============================================================
+2. ls — List Directory Contents
+============================================================
+
+$ ls
+CyberLab
+Desktop
+Documents
+Downloads
+linux_fundamentals_exact_commands_lab.sh
+Music
+Pictures
+Projects
+Public
+rahul
+tarun
+Templates
+tiva
+Videos
+
+
+============================================================
+3. ls -l — Long Listing
+============================================================
+
+$ ls -l
+total 60
+drwxrwxr-x 3 kali kali 4096 Aug 20 02:54 CyberLab
+drwxr-xr-x 2 kali kali 4096 Aug 20 02:49 Desktop
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Documents
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Downloads
+-rwxrwxrwx 1 kali kali 6876 Aug 20 02:49 linux_fundamentals_exact_commands_lab.sh
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Music
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Pictures
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Projects
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Public
+drwxrwxr-x 2 kali kali 4096 Jul 30 02:58 rahul
+drwxrwxr-x 2 kali kali 4096 Jul 30 01:37 tarun
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Templates
+-rwxr-xr-x 1 kali kali    1 Jul 30 03:00 tiva
+drwxr-xr-x 2 kali kali 4096 Jul 29 06:39 Videos
+
+
+============================================================
+4. ls -la — Long Listing + Hidden Files
+============================================================
+
+$ ls -la
+total 208
+drwx------ 20 kali kali  4096 Aug 20 02:54 .
+drwxr-xr-x  3 root root  4096 Jun 16 10:30 ..
+-rw-r--r--  1 kali kali   220 Jun 16 10:30 .bash_logout
+-rw-r--r--  1 kali kali  5578 Jun 16 10:30 .bashrc
+-rw-r--r--  1 kali kali  3526 Jun 16 10:30 .bashrc.original
+drwxrwxr-x  9 kali kali  4096 Aug 20 02:42 .cache
+drwxr-xr-x 16 kali kali  4096 Aug 20 02:54 .config
+drwxrwxr-x  3 kali kali  4096 Aug 20 02:54 CyberLab
+drwxr-xr-x  2 kali kali  4096 Aug 20 02:49 Desktop
+-rw-r--r--  1 kali kali    35 Jul 29 06:39 .dmrc
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Documents
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Downloads
+-rw-r--r--  1 kali kali 11759 Jun 16 10:30 .face
+lrwxrwxrwx  1 kali root     5 Jun 16 10:30 .face.icon -> .face
+drwx------  3 kali kali  4096 Jul 29 06:39 .gnupg
+-rw-------  1 kali kali     0 Jul 29 06:39 .ICEauthority
+drwxr-xr-x  3 kali kali  4096 Jun 16 10:30 .java
+-rwxrwxrwx  1 kali kali  6876 Aug 20 02:49 linux_fundamentals_exact_commands_lab.sh
+drwxr-xr-x  5 kali kali  4096 Jul 29 06:39 .local
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Music
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Pictures
+-rw-r--r--  1 kali kali   807 Jun 16 10:30 .profile
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Projects
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Public
+drwxrwxr-x  2 kali kali  4096 Jul 30 02:58 rahul
+drwx------  3 kali kali  4096 Jul 29 06:39 .ssh
+-rw-r--r--  1 kali kali     0 Jul 30 01:39 .sudo_as_admin_successful
+drwxrwxr-x  2 kali kali  4096 Jul 30 01:37 tarun
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Templates
+-rwxr-xr-x  1 kali kali     1 Jul 30 03:00 tiva
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-clipboard-tty7-control.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-clipboard-tty7-service.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-draganddrop-tty7-control.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-draganddrop-tty7-service.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-hostversion-tty7-control.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-seamless-tty7-control.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-seamless-tty7-service.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-vmsvga-session-tty7-control.pid
+-rw-r-----  1 kali kali     5 Aug 20 02:38 .vboxclient-vmsvga-session-tty7-service.pid
+drwxr-xr-x  2 kali kali  4096 Jul 29 06:39 Videos
+-rw-------  1 kali kali  1083 Aug 20 02:51 .viminfo
+-rw-------  1 kali kali    49 Aug 20 02:38 .Xauthority
+-rw-------  1 kali kali  4641 Aug 20 02:50 .xsession-errors
+-rw-------  1 kali kali  4512 Jul 30 03:04 .xsession-errors.old
+-rw-r--r--  1 kali kali   336 Jun 16 10:30 .zprofile
+-rw-------  1 kali kali   434 Jul 30 03:04 .zsh_history
+-rw-r--r--  1 kali kali 10882 Jun 16 10:30 .zshrc
+
+
+============================================================
+5. cd — Change Directory
+============================================================
+
+$ cd /home/kali/CyberLab
+
+
+$ pwd
+/home/kali
+
+
+============================================================
+6. cd .. — Parent Directory
+============================================================
+
+$ cd ..
+
+
+$ pwd
+/home/kali
+
+
+============================================================
+7. cd ~ — Home Directory
+============================================================
+
+$ cd /home/kali
+
+
+$ pwd
+/home/kali
+
+
+============================================================
+8. mkdir — Make Directory
+============================================================
+
+$ mkdir -p Notes Scripts Logs Backup
+
+
+$ ls -l
+total 20
+drwxrwxr-x 2 kali kali 4096 Aug 20 02:54 Backup
+drwxrwxr-x 3 kali kali 4096 Aug 20 02:54 Lab-Output
+drwxrwxr-x 2 kali kali 4096 Aug 20 02:54 Logs
+drwxrwxr-x 2 kali kali 4096 Aug 20 02:54 Notes
+drwxrwxr-x 2 kali kali 4096 Aug 20 02:54 Scripts
+
+
+============================================================
+9. touch — Create Files
+============================================================
+
+$ touch Notes/linux.txt
+
+
+$ touch Notes/commands.txt
+
+
+$ touch Scripts/test.sh
+
+
+$ touch Logs/system.log
+
+
+$ ls -l Notes Scripts Logs
+Logs:
+total 0
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 system.log
+
+Notes:
+total 0
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 commands.txt
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 linux.txt
+
+Scripts:
+total 0
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 test.sh
+
+
+============================================================
+10. cp — Copy
+============================================================
+
+$ cp Notes/linux.txt Backup/linux_backup.txt
+
+
+$ ls -l Backup
+total 0
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 linux_backup.txt
+
+
+============================================================
+11. mv — Move / Rename
+============================================================
+
+$ mv Notes/commands.txt Notes/linux_commands.txt
+
+
+$ ls -l Notes
+total 4
+-rw-rw-r-- 1 kali kali 91 Aug 20 02:54 linux_commands.txt
+-rw-rw-r-- 1 kali kali  0 Aug 20 02:54 linux.txt
+
+
+============================================================
+12. rm — Remove
+============================================================
+
+$ ls -l Backup
+total 0
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 delete_me.txt
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 linux_backup.txt
+
+
+$ rm Backup/delete_me.txt
+
+
+$ ls -l Backup
+total 0
+-rw-rw-r-- 1 kali kali 0 Aug 20 02:54 linux_backup.txt
+
+
+============================================================
+13. cat — Display File Content
+============================================================
+
+$ cat Notes/linux.txt
+
+
+============================================================
+14. less — Page-by-Page File Viewer
+============================================================
+
+============================================================
+15. nano — Terminal Text Editor
+============================================================
+Content after nano:
+
+$ cat Notes/linux.txt
+hi tarun how are you today 
+
+
+============================================================
+16. chmod — Change File Permissions
+============================================================
+
+$ ls -l Scripts/test.sh
+-rw-rw-r-- 1 kali kali 64 Aug 20 02:55 Scripts/test.sh
+
+
+$ chmod 755 Scripts/test.sh
+
+
+$ ls -l Scripts/test.sh
+-rwxr-xr-x 1 kali kali 64 Aug 20 02:55 Scripts/test.sh
+
+
+============================================================
+17. chown — Change File Ownership
+============================================================
+
+$ chown kali:kali Scripts/test.sh
+
+
+$ ls -l Scripts/test.sh
+-rwxr-xr-x 1 kali kali 64 Aug 20 02:55 Scripts/test.sh
+
+
+============================================================
+FINAL VERIFICATION
+============================================================
+Directory structure:
+
+$ find /home/kali/CyberLab -maxdepth 2 -print
+/home/kali/CyberLab
+/home/kali/CyberLab/Backup
+/home/kali/CyberLab/Backup/linux_backup.txt
+/home/kali/CyberLab/Logs
+/home/kali/CyberLab/Logs/system.log
+/home/kali/CyberLab/Notes
+/home/kali/CyberLab/Notes/linux.txt
+/home/kali/CyberLab/Notes/linux_commands.txt
+/home/kali/CyberLab/Lab-Output
+/home/kali/CyberLab/Lab-Output/linux_fundamentals_actual_output.txt
+/home/kali/CyberLab/Lab-Output/Screenshots
+/home/kali/CyberLab/Scripts
+/home/kali/CyberLab/Scripts/test.sh
+
+Script execution:
+
+$ ./Scripts/test.sh
+Cyber Lab Test
+Linux Fundamentals Lab
+
+
+============================================================
+LAB COMPLETE
+============================================================
+Actual command output log:
+/home/kali/CyberLab/Lab-Output/linux_fundamentals_actual_output.txt
+Screenshots:
+/home/kali/CyberLab/Lab-Output/Screenshots

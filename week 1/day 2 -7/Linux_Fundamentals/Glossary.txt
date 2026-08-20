@@ -1,0 +1,59 @@
+WEEK 1 — DAY 2 TO DAY 7
+LINUX FUNDAMENTALS GLOSSARY
+
+Directory
+A location used to organize files and other directories.
+
+File
+A named collection of data stored in the filesystem.
+
+Filesystem
+The structure used to organize and store files and directories.
+
+Terminal
+A text-based interface used to interact with the operating system.
+
+Shell
+A command interpreter that accepts commands and executes them.
+
+Root Directory
+The top-level directory of the Linux filesystem, represented by /.
+
+Home Directory
+The personal directory of a user, commonly under /home.
+
+Current Working Directory
+The directory in which the shell is currently operating.
+
+Absolute Path
+A complete path beginning from the root directory.
+
+Relative Path
+A path interpreted from the current working directory.
+
+Parent Directory
+The directory one level above the current directory, represented by ..
+
+Hidden File
+A file whose name normally starts with a dot.
+
+Permission
+A rule controlling whether a user can read, write or execute a file.
+
+Owner
+The user associated with ownership of a file.
+
+Group
+The group associated with a file.
+
+Read (r)
+Permission to read file contents.
+
+Write (w)
+Permission to modify a file.
+
+Execute (x)
+Permission to execute a file or script.
+
+Shell Script
+A text file containing shell commands that can be executed by a shell.

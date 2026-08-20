@@ -1,0 +1,74 @@
+WEEK 1 — DAY 2 TO DAY 7
+LINUX FUNDAMENTALS QUIZ
+
+1. Which command displays the current working directory?
+A. ls
+B. pwd
+C. cd
+D. mkdir
+
+2. Which command shows hidden files in a detailed listing?
+A. ls -r
+B. ls -x
+C. ls -la
+D. ls -p
+
+3. Which command creates a directory?
+A. touch
+B. mkdir
+C. cp
+D. mv
+
+4. Which command creates an empty file?
+A. touch
+B. cat
+C. nano
+D. pwd
+
+5. Which command can rename a file?
+A. rm
+B. mv
+C. chmod
+D. chown
+
+6. Which command displays file content?
+A. cat
+B. mkdir
+C. cd
+D. chmod
+
+7. Which key exits `less`?
+A. x
+B. Esc
+C. q
+D. Ctrl+X
+
+8. Which command changes permissions?
+A. chown
+B. chmod
+C. cp
+D. ls
+
+9. What does x mean in Linux permissions?
+A. Extract
+B. Execute
+C. Export
+D. Extended
+
+10. Which command changes ownership?
+A. chown
+B. chmod
+C. mv
+D. touch
+
+ANSWER KEY
+1-B
+2-C
+3-B
+4-A
+5-B
+6-A
+7-C
+8-B
+9-B
+10-A

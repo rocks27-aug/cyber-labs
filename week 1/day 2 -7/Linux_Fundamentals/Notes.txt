@@ -1,0 +1,56 @@
+WEEK 1 — DAY 2 TO DAY 7
+LINUX FUNDAMENTALS NOTES
+
+1. Linux Filesystem
+Linux organizes information using files and directories. The root of the filesystem is /.
+
+2. Current Working Directory
+The directory in which the shell is currently operating. `pwd` displays it.
+
+3. Absolute and Relative Paths
+An absolute path starts from /.
+A relative path is interpreted from the current directory.
+
+4. Navigation
+`cd` changes directory.
+`cd ..` moves to the parent directory.
+`cd ~` moves to the user's home directory.
+
+5. Directory Listing
+`ls` lists contents.
+`ls -l` provides detailed information.
+`ls -la` also includes hidden files.
+
+6. Creating Items
+`mkdir` creates directories.
+`touch` creates an empty file when it does not already exist.
+
+7. File Management
+`cp` copies.
+`mv` moves or renames.
+`rm` removes files.
+
+8. Reading and Editing
+`cat` displays file content.
+`less` provides page-by-page viewing.
+`nano` edits text from the terminal.
+
+9. Permissions
+Linux uses read (r), write (w) and execute (x) permissions for owner, group and others.
+
+Numeric values:
+r = 4
+w = 2
+x = 1
+
+Example:
+755 = rwx r-x r-x
+
+10. Ownership
+`chown` changes file ownership. `ls -l` can be used to inspect owner and group.
+
+11. Verification
+After changing files, permissions or ownership, use `ls -l` or another suitable command to verify the result.
+
+12. Practical Safety
+Always inspect the path before destructive operations such as `rm`.

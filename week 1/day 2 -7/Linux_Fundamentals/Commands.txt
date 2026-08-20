@@ -1,0 +1,90 @@
+WEEK 1 — DAY 2 TO DAY 7
+LINUX FUNDAMENTALS COMMAND REFERENCE
+
+pwd
+Meaning: Print Working Directory
+Purpose: Shows the current working directory.
+Example: pwd
+
+ls
+Meaning: List directory contents
+Purpose: Lists files and directories.
+Example: ls
+
+ls -l
+Meaning: Long listing
+Purpose: Shows detailed file information including permissions, owner, group, size and date.
+Example: ls -l
+
+ls -la
+Meaning: Long listing + all
+Purpose: Shows detailed information including hidden files.
+Example: ls -la
+
+cd
+Meaning: Change Directory
+Purpose: Changes the current directory.
+Example: cd Desktop
+
+cd ..
+Meaning: Parent directory
+Purpose: Moves one level up.
+Example: cd ..
+
+cd ~
+Meaning: Home directory
+Purpose: Moves to the current user's home directory.
+Example: cd ~
+
+mkdir
+Meaning: Make Directory
+Purpose: Creates a directory.
+Example: mkdir CyberLab
+
+touch
+Purpose: Creates an empty file when the file does not exist.
+Example: touch notes.txt
+
+cp
+Meaning: Copy
+Purpose: Copies a file or directory.
+Example: cp notes.txt backup.txt
+
+mv
+Meaning: Move
+Purpose: Moves or renames a file or directory.
+Example: mv notes.txt linux.txt
+
+rm
+Meaning: Remove
+Purpose: Removes a file.
+Example: rm linux.txt
+
+cat
+Meaning: Concatenate
+Purpose: Displays file contents.
+Example: cat notes.txt
+
+less
+Purpose: Opens a file for page-by-page viewing.
+Example: less notes.txt
+Exit: q
+
+nano
+Purpose: Terminal text editor.
+Example: nano notes.txt
+Save: Ctrl+O, Enter
+Exit: Ctrl+X
+
+chmod
+Meaning: Change Mode
+Purpose: Changes file permissions.
+Example: chmod 755 Scripts/test.sh
+
+chown
+Meaning: Change Owner
+Purpose: Changes file owner/group.
+Example: sudo chown kali:kali Scripts/test.sh
+
+IMPORTANT:
+Use destructive commands carefully. Do not use rm -rf unless you understand exactly what will be deleted.
