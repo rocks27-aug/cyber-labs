@@ -72,8 +72,8 @@ Cyber-Labs/
 | Week | Topic | Status |
 |------|-------|--------|
 | Week 1 | Cyber Lab Setup | ✅ Completed |
-| Week 1 | Git & GitHub | 🔄 In Progress |
-| Week 1 | Linux Fundamentals | ⏳ Upcoming |
+| Week 1 | Git & GitHub | ✅ Completed  |
+| Week 1 | Linux Fundamentals | ✅ Completed  |
 
 ---
 
