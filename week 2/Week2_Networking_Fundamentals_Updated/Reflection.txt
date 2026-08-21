@@ -1,0 +1,27 @@
+WEEK 2 — NETWORKING FUNDAMENTALS REFLECTION
+
+1. What IPv4 address is assigned to your Kali interface?
+
+2. What is your CIDR prefix?
+
+3. What is your default gateway?
+
+4. What information does `ip route` provide?
+
+5. What is the purpose of ARP?
+
+6. What information can you see with `ip neigh`?
+
+7. What is the difference between TCP and UDP?
+
+8. What is a network port?
+
+9. What happens when you query a domain using DNS?
+
+10. What is the difference between pinging an IP address and a domain name?
+
+11. What does traceroute/tracepath show?
+
+12. Which networking command was most useful to you?
+
+13. Which networking concept needs more practice?

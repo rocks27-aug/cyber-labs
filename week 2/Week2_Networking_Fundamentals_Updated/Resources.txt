@@ -1,0 +1,14 @@
+WEEK 2 — NETWORKING FUNDAMENTALS RESOURCES
+
+
+
+Useful manual pages:
+man ip
+man ss
+man ping
+man dig
+man nslookup
+man host
+man traceroute
+man tracepath
+

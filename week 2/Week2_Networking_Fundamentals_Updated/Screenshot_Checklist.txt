@@ -1,0 +1,26 @@
+WEEK 2 — NETWORKING FUNDAMENTALS SCREENSHOT CHECKLIST
+
+
+
+[ ] 01 — ip addr
+[ ] 02 — ip route
+[ ] 03 — ip neigh
+[ ] 04 — ss -tuln
+[ ] 05 — dig example.com
+[ ] 06 — nslookup/host example.com
+[ ] 07 — ping IP + domain
+[ ] 08 — traceroute/tracepath
+[ ] 09 — Final networking summary
+
+Suggested filenames:
+01-ip-addr.png
+02-ip-route.png
+03-ip-neigh.png
+04-ss-ports.png
+05-dig.png
+06-dns.png
+07-ping.png
+08-traceroute.png
+09-final-networking-lab.png
+
+

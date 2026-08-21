@@ -1,0 +1,58 @@
+WEEK 2 — NETWORKING FUNDAMENTALS COMMANDS
+
+1. ip addr
+Meaning: Display IP addresses and network interfaces.
+Example:
+ip addr
+
+2. ip route
+Meaning: Display the IP routing table.
+Example:
+ip route
+
+3. ip neigh
+Meaning: Display neighbour/ARP information.
+Example:
+ip neigh
+
+4. ss -tuln
+Meaning: Display listening TCP/UDP sockets.
+-t = TCP
+-u = UDP
+-l = listening
+-n = numeric
+
+Example:
+ss -tuln
+
+5. dig
+Meaning: DNS lookup utility.
+Example:
+dig example.com
+
+6. nslookup
+Meaning: Name Server Lookup.
+Example:
+nslookup example.com
+
+7. host
+Meaning: Simple DNS lookup utility.
+Example:
+host example.com
+
+8. ping
+Purpose: Test network reachability and response time.
+Example:
+ping -c 4 8.8.8.8
+
+9. traceroute
+Purpose: Show network hops toward a destination.
+Example:
+traceroute example.com
+
+10. tracepath
+Purpose: Trace the network path and path information.
+Example:
+tracepath example.com
+
+Use these commands only on systems/networks you own or are authorized to test.

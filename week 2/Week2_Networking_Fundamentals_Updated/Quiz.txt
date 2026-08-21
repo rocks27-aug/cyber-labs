@@ -1,0 +1,73 @@
+WEEK 2 — NETWORKING FUNDAMENTALS QUIZ
+
+1. Which command displays IP addresses?
+A. ip addr
+B. ip route
+C. ss
+D. ping
+
+2. Which command displays the routing table?
+A. ip neigh
+B. ip route
+C. dig
+D. host
+
+3. Which command displays neighbour/ARP information?
+A. ip neigh
+B. ip addr
+C. ping
+D. ss
+
+4. Which command displays listening TCP/UDP sockets?
+A. dig
+B. ss -tuln
+C. host
+D. traceroute
+
+5. Which service translates domain names to IP addresses?
+A. ARP
+B. DNS
+C. ICMP
+D. TCP
+
+6. Which command tests network reachability?
+A. ping
+B. chmod
+C. mkdir
+D. nano
+
+7. Which tool traces network hops?
+A. cat
+B. traceroute
+C. touch
+D. ls
+
+8. Which protocol is connection-oriented?
+A. UDP
+B. TCP
+C. DNS
+D. ARP
+
+9. Which command can perform a simple DNS lookup?
+A. host
+B. chmod
+C. mv
+D. ss
+
+10. Which command shows listening TCP and UDP sockets numerically?
+A. ip addr
+B. ss -tuln
+C. ping
+D. dig
+
+ANSWER KEY
+1-A
+2-B
+3-A
+4-B
+5-B
+6-A
+7-B
+8-B
+9-A
+10-B

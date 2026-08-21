@@ -1,0 +1,49 @@
+WEEK 2 — NETWORKING FUNDAMENTALS GLOSSARY
+
+IP Address
+A logical network address used for IP communication.
+
+IPv4
+A 32-bit Internet Protocol addressing system.
+
+CIDR
+Notation used to represent an IP network prefix, such as /24.
+
+Network Interface
+A software/hardware interface through which a system communicates on a network.
+
+Default Gateway
+The router used for destinations without a more-specific route.
+
+Routing Table
+A collection of routes used to determine where packets should be sent.
+
+MAC Address
+A link-layer address associated with a network interface.
+
+ARP
+Address Resolution Protocol; used on IPv4 local networks to resolve IP addresses to MAC addresses.
+
+TCP
+Transmission Control Protocol.
+
+UDP
+User Datagram Protocol.
+
+Port
+A numbered endpoint used by network applications.
+
+DNS
+Domain Name System.
+
+ICMP
+Internet Control Message Protocol.
+
+Latency
+The time taken for a request and response.
+
+Hop
+A routing step between network devices.
+
+Listening Socket
+A network socket waiting for incoming connections or traffic.

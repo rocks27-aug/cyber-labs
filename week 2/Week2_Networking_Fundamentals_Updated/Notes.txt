@@ -1,0 +1,40 @@
+WEEK 2 — NETWORKING FUNDAMENTALS NOTES
+
+1. IP Address
+An IPv4 address is a 32-bit logical network address assigned to a network interface.
+
+2. CIDR
+CIDR notation represents the network prefix, for example /24.
+
+3. Default Gateway
+The default route is used when no more-specific route matches a destination.
+
+4. Routing Table
+The routing table contains routes used by the system to decide where packets should be sent.
+
+5. MAC Address
+A MAC address is a link-layer address associated with a network interface.
+
+6. ARP / Neighbour Information
+On IPv4 local networks, ARP associates IP addresses with MAC addresses. Linux exposes neighbour information through `ip neigh`.
+
+7. TCP
+Transmission Control Protocol is connection-oriented and provides reliable, ordered delivery.
+
+8. UDP
+User Datagram Protocol is connectionless and does not provide TCP-style reliability.
+
+9. Port
+A port is a numbered endpoint used by network applications/services.
+
+10. DNS
+Domain Name System resolves names such as example.com to IP addresses and provides other DNS records.
+
+11. Ping
+Ping uses ICMP Echo messages to test reachability and measure round-trip time.
+
+12. Traceroute / Tracepath
+These tools help identify or investigate network hops between the local system and a destination.
+
+13. Practical Observation
+For each command, record what information it displays and relate that information to the network configuration of the Kali VM.
