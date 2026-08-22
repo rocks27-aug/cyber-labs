@@ -1,0 +1,821 @@
+
+============================================================
+COMMAND [1]: ip link
+TIME: 2026-08-21 06:28:00
+============================================================
+$ ip link
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
+    link/ether 08:00:27:5a:87:bc brd ff:ff:ff:ff:ff:ff
+Exit status: 0
+
+============================================================
+COMMAND [2]: ip route get 8.8.8.8
+TIME: 2026-08-21 06:35:38
+============================================================
+$ ip route get 8.8.8.8
+8.8.8.8 via 10.0.2.2 dev eth0 src 10.0.2.15 uid 1000 
+    cache 
+Exit status: 0
+
+============================================================
+COMMAND [3]: sudo ss -tulpn
+TIME: 2026-08-21 06:37:41
+============================================================
+$ sudo ss -tulpn
+Netid State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+Exit status: 0
+
+============================================================
+COMMAND [1]: python3 -m http.server 8080
+TIME: 2026-08-21 06:40:28
+============================================================
+$ python3 -m http.server 8080
+Exit status: 120
+
+============================================================
+COMMAND [2]: pgrep -a sshd
+TIME: 2026-08-21 06:42:53
+============================================================
+$ pgrep -a sshd
+Exit status: 1
+
+============================================================
+COMMAND [3]: sudo systemctl start ssh
+TIME: 2026-08-21 06:44:46
+============================================================
+$ sudo systemctl start ssh
+Exit status: 0
+
+============================================================
+COMMAND [4]: pgrep -a sshd
+TIME: 2026-08-21 06:45:17
+============================================================
+$ pgrep -a sshd
+18635 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+Exit status: 0
+
+============================================================
+COMMAND [5]: sudo ss -tulpn
+TIME: 2026-08-21 06:46:15
+============================================================
+$ sudo ss -tulpn
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+tcp   LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=18635,fd=6))
+tcp   LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=18635,fd=7))
+Exit status: 0
+
+============================================================
+COMMAND [6]: pgrep -a sshd
+TIME: 2026-08-21 06:48:30
+============================================================
+$ pgrep -a sshd
+18635 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+Exit status: 0
+
+============================================================
+COMMAND [7]: sudo systemctl stop sshd
+TIME: 2026-08-21 06:49:11
+============================================================
+$ sudo systemctl stop sshd
+Failed to stop sshd.service: Unit sshd.service not loaded.
+Exit status: 5
+
+============================================================
+COMMAND [8]: sudo systemctl stop ssh
+TIME: 2026-08-21 06:49:44
+============================================================
+$ sudo systemctl stop ssh
+Exit status: 0
+
+============================================================
+COMMAND [9]: sudo ss -tulpn
+TIME: 2026-08-21 06:50:03
+============================================================
+$ sudo ss -tulpn
+Netid State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+Exit status: 0
+
+============================================================
+COMMAND [10]: ps aux | grep ssh
+TIME: 2026-08-21 06:51:21
+============================================================
+$ ps aux | grep ssh
+kali        1140  0.0  0.0  10680   520 ?        Ss   06:18   0:00 /usr/bin/ssh-agent -s
+kali       21918  0.0  0.1   7196  3708 pts/1    S+   06:51   0:00 bash -c ps aux | grep ssh
+kali       21921  0.0  0.1   6556  2528 pts/1    S+   06:51   0:00 grep ssh
+Exit status: 0
+
+============================================================
+COMMAND [11]: sudo systemctl status ssh
+TIME: 2026-08-21 06:56:03
+============================================================
+$ sudo systemctl status ssh
+○ ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: disabled)
+     Active: inactive (dead) since Fri 2026-08-21 06:49:44 EDT; 6min ago
+   Duration: 4min 57.937s
+ Invocation: 82a2d38bed6048acb3da1861522d8310
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 18632 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+    Process: 18635 ExecStart=/usr/sbin/sshd -D $SSHD_OPTS (code=exited, status=0/SUCCESS)
+   Main PID: 18635 (code=exited, status=0/SUCCESS)
+   Mem peak: 4.6M
+        CPU: 45ms
+
+Aug 21 06:44:46 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 21 06:44:46 kali sshd[18635]: Server listening on 0.0.0.0 port 22.
+Aug 21 06:44:46 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 21 06:44:46 kali sshd[18635]: Server listening on :: port 22.
+Aug 21 06:49:44 kali sshd[18635]: Received signal 15; terminating.
+Aug 21 06:49:44 kali systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Aug 21 06:49:44 kali systemd[1]: ssh.service: Deactivated successfully.
+Aug 21 06:49:44 kali systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+Exit status: 3
+
+============================================================
+COMMAND [12]: sh.service - OpenBSD Secure Shell server
+TIME: 2026-08-21 06:59:07
+============================================================
+$ sh.service - OpenBSD Secure Shell server
+bash: line 1: sh.service: command not found
+Exit status: 127
+
+============================================================
+COMMAND [13]: cat /etc/resolv.conf
+TIME: 2026-08-21 06:59:32
+============================================================
+$ cat /etc/resolv.conf
+# Generated by NetworkManager
+nameserver 172.20.1.15
+nameserver 172.20.1.5
+nameserver 8.8.8.8
+# NOTE: the libc resolver may not support more than 3 nameservers.
+# The nameservers listed below may not be recognized.
+nameserver fd17:625c:f037:2::3
+Exit status: 0
+
+============================================================
+COMMAND [14]: dig www.google.com
+TIME: 2026-08-21 07:00:56
+============================================================
+$ dig www.google.com
+
+; <<>> DiG 9.20.23-1-Debian <<>> www.google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 515
+;; flags: qr rd ra; QUERY: 1, ANSWER: 8, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: b074fffeefdf4ab6010000006a882fd2eb1a10d32d98fc15 (good)
+;; QUESTION SECTION:
+;www.google.com.			IN	A
+
+;; ANSWER SECTION:
+www.google.com.		25	IN	A	142.251.150.119
+www.google.com.		25	IN	A	142.251.152.119
+www.google.com.		25	IN	A	142.251.155.119
+www.google.com.		25	IN	A	142.251.151.119
+www.google.com.		25	IN	A	142.251.157.119
+www.google.com.		25	IN	A	142.251.154.119
+www.google.com.		25	IN	A	142.251.153.119
+www.google.com.		25	IN	A	142.251.156.119
+
+;; Query time: 7 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:00:56 EDT 2026
+;; MSG SIZE  rcvd: 199
+
+Exit status: 0
+
+============================================================
+COMMAND [15]: cat /etc/resolv.conf
+TIME: 2026-08-21 07:01:30
+============================================================
+$ cat /etc/resolv.conf
+# Generated by NetworkManager
+nameserver 172.20.1.15
+nameserver 172.20.1.5
+nameserver 8.8.8.8
+# NOTE: the libc resolver may not support more than 3 nameservers.
+# The nameservers listed below may not be recognized.
+nameserver fd17:625c:f037:2::3
+Exit status: 0
+
+============================================================
+COMMAND [16]: nslookup www.google.com
+TIME: 2026-08-21 07:03:56
+============================================================
+$ nslookup www.google.com
+Server:		172.20.1.15
+Address:	172.20.1.15#53
+
+Non-authoritative answer:
+Name:	www.google.com
+Address: 142.251.152.119
+Name:	www.google.com
+Address: 142.251.157.119
+Name:	www.google.com
+Address: 142.251.150.119
+Name:	www.google.com
+Address: 142.251.154.119
+Name:	www.google.com
+Address: 142.251.156.119
+Name:	www.google.com
+Address: 142.251.153.119
+Name:	www.google.com
+Address: 142.251.151.119
+Name:	www.google.com
+Address: 142.251.155.119
+Name:	www.google.com
+Address: 2001:4860:4829:7700::
+Name:	www.google.com
+Address: 2001:4860:482c:7700::
+Name:	www.google.com
+Address: 2001:4860:4826:7700::
+Name:	www.google.com
+Address: 2001:4860:482b:7700::
+Name:	www.google.com
+Address: 2001:4860:4828:7700::
+Name:	www.google.com
+Address: 2001:4860:4827:7700::
+Name:	www.google.com
+Address: 2001:4860:482a:7700::
+Name:	www.google.com
+Address: 2001:4860:482d:7700::
+
+Exit status: 0
+
+============================================================
+COMMAND [17]: dig www.google.com CNAME
+TIME: 2026-08-21 07:05:44
+============================================================
+$ dig www.google.com CNAME
+
+; <<>> DiG 9.20.23-1-Debian <<>> www.google.com CNAME
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7742
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 106d67ffd573df49010000006a8830f2917f50d9fa6d7bfd (good)
+;; QUESTION SECTION:
+;www.google.com.			IN	CNAME
+
+;; AUTHORITY SECTION:
+google.com.		60	IN	SOA	ns1.google.com. dns-admin.google.com. 967711692 900 900 1800 60
+
+;; Query time: 79 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:05:44 EDT 2026
+;; MSG SIZE  rcvd: 121
+
+Exit status: 0
+
+============================================================
+COMMAND [18]: nslookp rajasthan.gov.in
+TIME: 2026-08-21 07:08:25
+============================================================
+$ nslookp rajasthan.gov.in
+bash: line 1: nslookp: command not found
+Exit status: 127
+
+============================================================
+COMMAND [19]: dig rajasthan.gov.in
+TIME: 2026-08-21 07:08:45
+============================================================
+$ dig rajasthan.gov.in
+
+; <<>> DiG 9.20.23-1-Debian <<>> rajasthan.gov.in
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41789
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 395a1c9a6a779781010000006a8831a7324d480e542534b6 (good)
+;; QUESTION SECTION:
+;rajasthan.gov.in.		IN	A
+
+;; ANSWER SECTION:
+rajasthan.gov.in.	60	IN	A	10.70.240.162
+
+;; Query time: 7 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:08:45 EDT 2026
+;; MSG SIZE  rcvd: 89
+
+Exit status: 0
+
+============================================================
+COMMAND [20]: dig @172.20.1.15 www.google.com NS
+TIME: 2026-08-21 07:11:08
+============================================================
+$ dig @172.20.1.15 www.google.com NS
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 www.google.com NS
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 63904
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 356a8966aa70ee30010000006a883236ac2f0864c70092c5 (good)
+;; QUESTION SECTION:
+;www.google.com.			IN	NS
+
+;; AUTHORITY SECTION:
+google.com.		60	IN	SOA	ns1.google.com. dns-admin.google.com. 967711692 900 900 1800 60
+
+;; Query time: 51 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:11:08 EDT 2026
+;; MSG SIZE  rcvd: 121
+
+Exit status: 0
+
+============================================================
+COMMAND [21]: nslookup -type=NS www.google.com 172.20.1.15
+TIME: 2026-08-21 07:12:09
+============================================================
+$ nslookup -type=NS www.google.com 172.20.1.15
+Server:		172.20.1.15
+Address:	172.20.1.15#53
+
+Non-authoritative answer:
+*** Can't find www.google.com: No answer
+
+Authoritative answers can be found from:
+google.com
+	origin = ns1.google.com
+	mail addr = dns-admin.google.com
+	serial = 967711692
+	refresh = 900
+	retry = 900
+	expire = 1800
+	minimum = 60
+
+Exit status: 0
+
+============================================================
+COMMAND [22]: resolvectl status
+TIME: 2026-08-21 07:12:45
+============================================================
+$ resolvectl status
+bash: line 1: resolvectl: command not found
+Exit status: 127
+
+============================================================
+COMMAND [23]: cat /etc/resolv.conf
+TIME: 2026-08-21 07:12:56
+============================================================
+$ cat /etc/resolv.conf
+# Generated by NetworkManager
+nameserver 172.20.1.15
+nameserver 172.20.1.5
+nameserver 8.8.8.8
+# NOTE: the libc resolver may not support more than 3 nameservers.
+# The nameservers listed below may not be recognized.
+nameserver fd17:625c:f037:2::3
+Exit status: 0
+
+============================================================
+COMMAND [24]: dig @172.20.1.15 rajasthan.gov.in A
+TIME: 2026-08-21 07:14:05
+============================================================
+$ dig @172.20.1.15 rajasthan.gov.in A
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 rajasthan.gov.in A
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 1037
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: d87ded1ae23b53d7010000006a8832e79a66847885adb575 (good)
+;; QUESTION SECTION:
+;rajasthan.gov.in.		IN	A
+
+;; ANSWER SECTION:
+rajasthan.gov.in.	60	IN	A	10.70.240.162
+
+;; Query time: 3 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:14:05 EDT 2026
+;; MSG SIZE  rcvd: 89
+
+Exit status: 0
+
+============================================================
+COMMAND [25]: dig @172.20.1.15 rajasthan.gov.in NS
+TIME: 2026-08-21 07:15:26
+============================================================
+$ dig @172.20.1.15 rajasthan.gov.in NS
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 rajasthan.gov.in NS
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 20508
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 3
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 28369f3018321b91010000006a8833389c2909aa190fcd4d (good)
+;; QUESTION SECTION:
+;rajasthan.gov.in.		IN	NS
+
+;; ANSWER SECTION:
+rajasthan.gov.in.	60	IN	NS	ns1.rajasthan.gov.in.
+rajasthan.gov.in.	60	IN	NS	ns2.rajasthan.gov.in.
+
+;; ADDITIONAL SECTION:
+ns1.rajasthan.gov.in.	60	IN	A	172.20.1.5
+ns2.rajasthan.gov.in.	60	IN	A	172.20.1.15
+
+;; Query time: 4 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:15:26 EDT 2026
+;; MSG SIZE  rcvd: 141
+
+Exit status: 0
+
+============================================================
+COMMAND [26]: dig @172.20.1.15 rajasthan.gov.in NS +additional
+TIME: 2026-08-21 07:15:37
+============================================================
+$ dig @172.20.1.15 rajasthan.gov.in NS +additional
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 rajasthan.gov.in NS +additional
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 65320
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 3
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 02c60be1a94b6f06010000006a883343f7a3b567f70578c1 (good)
+;; QUESTION SECTION:
+;rajasthan.gov.in.		IN	NS
+
+;; ANSWER SECTION:
+rajasthan.gov.in.	60	IN	NS	ns2.rajasthan.gov.in.
+rajasthan.gov.in.	60	IN	NS	ns1.rajasthan.gov.in.
+
+;; ADDITIONAL SECTION:
+ns1.rajasthan.gov.in.	60	IN	A	172.20.1.5
+ns2.rajasthan.gov.in.	60	IN	A	172.20.1.15
+
+;; Query time: 0 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:15:37 EDT 2026
+;; MSG SIZE  rcvd: 141
+
+Exit status: 0
+
+============================================================
+COMMAND [27]: dig @172.20.1.15 rajasthan.gov.in SOA
+TIME: 2026-08-21 07:15:54
+============================================================
+$ dig @172.20.1.15 rajasthan.gov.in SOA
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 rajasthan.gov.in SOA
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42777
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 4a5ab7e50fd86cb8010000006a88335452480e348d68fa8e (good)
+;; QUESTION SECTION:
+;rajasthan.gov.in.		IN	SOA
+
+;; ANSWER SECTION:
+rajasthan.gov.in.	60	IN	SOA	ns1.rajasthan.gov.in. administrator.rajasthan.gov.in. 2005086300 3600 900 604800 86400
+
+;; Query time: 4 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Fri Aug 21 07:15:54 EDT 2026
+;; MSG SIZE  rcvd: 127
+
+Exit status: 0
+
+============================================================
+COMMAND [1]: dig @172.20.1.15 www.google.com
+TIME: 2026-08-22 02:20:37
+============================================================
+$ dig @172.20.1.15 www.google.com
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 www.google.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8975
+;; flags: qr rd ra; QUERY: 1, ANSWER: 8, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1220
+; COOKIE: 1ee8d4a7263b896c010000006a893f9e965a99e9f46a6b4f (good)
+;; QUESTION SECTION:
+;www.google.com.			IN	A
+
+;; ANSWER SECTION:
+www.google.com.		209	IN	A	142.251.153.119
+www.google.com.		209	IN	A	142.251.155.119
+www.google.com.		209	IN	A	142.251.150.119
+www.google.com.		209	IN	A	142.251.152.119
+www.google.com.		209	IN	A	142.251.157.119
+www.google.com.		209	IN	A	142.251.154.119
+www.google.com.		209	IN	A	142.251.151.119
+www.google.com.		209	IN	A	142.251.156.119
+
+;; Query time: 0 msec
+;; SERVER: 172.20.1.15#53(172.20.1.15) (UDP)
+;; WHEN: Sat Aug 22 02:20:37 EDT 2026
+;; MSG SIZE  rcvd: 199
+
+Exit status: 0
+
+============================================================
+COMMAND [2]: dig @172.20.1.15 www.google.com +trace
+TIME: 2026-08-22 02:26:04
+============================================================
+$ dig @172.20.1.15 www.google.com +trace
+
+; <<>> DiG 9.20.23-1-Debian <<>> @172.20.1.15 www.google.com +trace
+; (1 server found)
+;; global options: +cmd
+.			435913	IN	NS	m.root-servers.net.
+.			435913	IN	NS	g.root-servers.net.
+.			435913	IN	NS	f.root-servers.net.
+.			435913	IN	NS	i.root-servers.net.
+.			435913	IN	NS	a.root-servers.net.
+.			435913	IN	NS	k.root-servers.net.
+.			435913	IN	NS	l.root-servers.net.
+.			435913	IN	NS	e.root-servers.net.
+.			435913	IN	NS	d.root-servers.net.
+.			435913	IN	NS	c.root-servers.net.
+.			435913	IN	NS	h.root-servers.net.
+.			435913	IN	NS	j.root-servers.net.
+.			435913	IN	NS	b.root-servers.net.
+.			441290	IN	RRSIG	NS 8 0 518400 20260902170000 20260820160000 57780 . FGi5SV4EdJqJcKnlnQ8qO77rWVVI96rKrcQVuNV758POKTWm3prY5DFh UbPSrsHWi9/hd8CLRj1MevHkn3LX04knh9ZEARhZtoJ9ynopsPd9VseX SPHVv0quPrfNIJeMxm6GTvSYsr8usgtga6xd9tho45mtkvxgmN7XVjMV vi95nfBtJ1ByWvFNvMNIo43/uipP0aPbbtefmsJov9Kklu9PZz+DnXwR rbxMAcfst5OStMZDdlhpVUuGg8rf2xg4xePpkBMHiWaD9luDF0Fgr+fn 9e+DlTIjVeKwksMJXn7xlWcIa6V47ZQhkfDfGrPYCjOpnziJ690Db7xv rlfvIA==
+;; Received 1137 bytes from 172.20.1.15#53(172.20.1.15) in 4 ms
+
+;; communications error to 2001:dc3::35#53: network unreachable
+;; communications error to 2001:dc3::35#53: network unreachable
+;; communications error to 2001:dc3::35#53: network unreachable
+com.			172800	IN	NS	a.gtld-servers.net.
+com.			172800	IN	NS	b.gtld-servers.net.
+com.			172800	IN	NS	c.gtld-servers.net.
+com.			172800	IN	NS	d.gtld-servers.net.
+com.			172800	IN	NS	e.gtld-servers.net.
+com.			172800	IN	NS	f.gtld-servers.net.
+com.			172800	IN	NS	g.gtld-servers.net.
+com.			172800	IN	NS	h.gtld-servers.net.
+com.			172800	IN	NS	i.gtld-servers.net.
+com.			172800	IN	NS	j.gtld-servers.net.
+com.			172800	IN	NS	k.gtld-servers.net.
+com.			172800	IN	NS	l.gtld-servers.net.
+com.			172800	IN	NS	m.gtld-servers.net.
+com.			86400	IN	DS	19718 13 2 8ACBB0CD28F41250A80A491389424D341522D946B0DA0C0291F2D3D7 71D7805A
+com.			86400	IN	RRSIG	DS 8 1 86400 20260904050000 20260822040000 57780 . I83E0UBkzPWJDbkWOzgMz0JG4yUFFPWBRCT4LJLsaCMEcmz5gH4xLEGp 8fmI6521dnI7uMfw4pYuPWNDRv2XlrQMyD7tjckfXJOg1bh6rYhEhJoa q17sQbjjEP/s8jblfz0ufMnpRheS7Z3HgdBOiBqaIwMxEms8ycTkxloK 0842xg5ULQpKfP3Uog3lfgQLgAdqFcpQ/oRKi3K87GKqlAcgOVnAi+0C jcxvYHJbX0Kt3jGR/lGIJ2ytViLlwQlfp6o5AIdolpXbCIK2UshOuN8n aW4NlnB4GACyk9+5CP13OqheEqaGEgQXOk+GR0U2JDydbYhGOnqvOR5F /f2mlA==
+;; Received 1174 bytes from 192.203.230.10#53(e.root-servers.net) in 36 ms
+
+google.com.		172800	IN	NS	ns2.google.com.
+google.com.		172800	IN	NS	ns1.google.com.
+google.com.		172800	IN	NS	ns3.google.com.
+google.com.		172800	IN	NS	ns4.google.com.
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN NSEC3 1 1 0 - CK0Q35HRS4H76G6CHNB9414CJN6S5UPL NS SOA RRSIG DNSKEY NSEC3PARAM
+CK0POJMG874LJREF7EFN8430QVIT8BSM.com. 900 IN RRSIG NSEC3 13 2 900 20260826110229 20260819095229 41446 com. wry7oYvwC46awTHolu87vHNXSh+TRVYn52HOejOMLeHTSwxh1AEcRBho 3q2PXVnKNNyQS4YKfKVAA37BedRuuQ==
+S84BOR4DK28HNHPLC218O483VOOOD5D8.com. 900 IN NSEC3 1 1 0 - S84BR9CIB2A20L3ETR1M2415ENPP99L8 NS DS RRSIG
+S84BOR4DK28HNHPLC218O483VOOOD5D8.com. 900 IN RRSIG NSEC3 13 2 900 20260827012254 20260820001254 41446 com. Q2nAzVQgwvJE++Eu3GULwzi2OBcaI4Ljm38tpjTIu2tgM1nluGKlCw5/ +FxpDfXFMaM+OD/R1+4JyTPVKW20qA==
+;; Received 648 bytes from 192.55.83.30#53(m.gtld-servers.net) in 144 ms
+
+www.google.com.		300	IN	A	142.251.152.119
+www.google.com.		300	IN	A	142.251.157.119
+www.google.com.		300	IN	A	142.251.150.119
+www.google.com.		300	IN	A	142.251.151.119
+www.google.com.		300	IN	A	142.251.156.119
+www.google.com.		300	IN	A	142.251.153.119
+www.google.com.		300	IN	A	142.251.155.119
+www.google.com.		300	IN	A	142.251.154.119
+;; Received 171 bytes from 216.239.32.10#53(ns1.google.com) in 80 ms
+
+Exit status: 0
+
+============================================================
+COMMAND [1]: nslookup www.google.com
+TIME: 2026-08-22 02:53:19
+============================================================
+$ nslookup www.google.com
+Server:		172.20.1.15
+Address:	172.20.1.15#53
+
+Non-authoritative answer:
+Name:	www.google.com
+Address: 142.251.152.119
+Name:	www.google.com
+Address: 142.251.157.119
+Name:	www.google.com
+Address: 142.251.151.119
+Name:	www.google.com
+Address: 142.251.150.119
+Name:	www.google.com
+Address: 142.251.153.119
+Name:	www.google.com
+Address: 142.251.155.119
+Name:	www.google.com
+Address: 142.251.154.119
+Name:	www.google.com
+Address: 142.251.156.119
+Name:	www.google.com
+Address: 2001:4860:4828:7700::
+Name:	www.google.com
+Address: 2001:4860:482a:7700::
+Name:	www.google.com
+Address: 2001:4860:482d:7700::
+Name:	www.google.com
+Address: 2001:4860:4829:7700::
+Name:	www.google.com
+Address: 2001:4860:482c:7700::
+Name:	www.google.com
+Address: 2001:4860:482b:7700::
+Name:	www.google.com
+Address: 2001:4860:4826:7700::
+Name:	www.google.com
+Address: 2001:4860:4827:7700::
+
+Exit status: 0
+
+============================================================
+COMMAND [2]: host www.google.com
+TIME: 2026-08-22 02:53:42
+============================================================
+$ host www.google.com
+www.google.com has address 142.251.153.119
+www.google.com has address 142.251.155.119
+www.google.com has address 142.251.154.119
+www.google.com has address 142.251.156.119
+www.google.com has address 142.251.152.119
+www.google.com has address 142.251.157.119
+www.google.com has address 142.251.151.119
+www.google.com has address 142.251.150.119
+www.google.com has IPv6 address 2001:4860:4826:7700::
+www.google.com has IPv6 address 2001:4860:4827:7700::
+www.google.com has IPv6 address 2001:4860:4828:7700::
+www.google.com has IPv6 address 2001:4860:482a:7700::
+www.google.com has IPv6 address 2001:4860:482d:7700::
+www.google.com has IPv6 address 2001:4860:4829:7700::
+www.google.com has IPv6 address 2001:4860:482c:7700::
+www.google.com has IPv6 address 2001:4860:482b:7700::
+www.google.com has HTTP service bindings 1 . alpn="h2,h3"
+Exit status: 0
+
+============================================================
+COMMAND [3]: nc -zv <authorized-host> 443
+TIME: 2026-08-22 02:54:15
+============================================================
+$ nc -zv <authorized-host> 443
+bash: line 1: authorized-host: No such file or directory
+Exit status: 1
+
+============================================================
+COMMAND [4]: nc -zv www.google.com 443
+TIME: 2026-08-22 02:55:06
+============================================================
+$ nc -zv www.google.com 443
+Warning: inverse host lookup failed for 142.251.156.119: Unknown host
+Warning: inverse host lookup failed for 142.251.153.119: Unknown host
+Warning: inverse host lookup failed for 142.251.154.119: Unknown host
+Warning: inverse host lookup failed for 142.251.151.119: Unknown host
+Warning: inverse host lookup failed for 142.251.157.119: Unknown host
+Warning: inverse host lookup failed for 142.251.152.119: Unknown host
+Warning: inverse host lookup failed for 142.251.155.119: Unknown host
+Warning: inverse host lookup failed for 142.251.150.119: Unknown host
+www.google.com [142.251.156.119] 443 (https) open
+Exit status: 0
+
+============================================================
+COMMAND [5]: curl -I https://google.com
+TIME: 2026-08-22 02:55:55
+============================================================
+$ curl -I https://google.com
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0    220   0      0   0      0      0      0                              0  0    220   0      0   0      0      0      0                              0  0    220   0      0   0      0      0      0                              0
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-EfNJPjn9-I-4H-DaGg-2zw' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+date: Sat, 22 Aug 2026 06:55:55 GMT
+expires: Mon, 21 Sep 2026 06:55:55 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+Exit status: 0
+
+============================================================
+COMMAND [1]: curl -I https://google.com
+TIME: 2026-08-22 02:56:57
+============================================================
+$ curl -I https://google.com
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0    220   0      0   0      0      0      0                              0  0    220   0      0   0      0      0      0                              0  0    220   0      0   0      0      0      0                              0
+HTTP/2 301 
+location: https://www.google.com/
+content-type: text/html; charset=UTF-8
+content-security-policy-report-only: object-src 'none';base-uri 'self';script-src 'nonce-FVW0niPSzmjI1Ge7u4zAtg' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+date: Sat, 22 Aug 2026 06:56:58 GMT
+expires: Mon, 21 Sep 2026 06:56:58 GMT
+cache-control: public, max-age=2592000
+server: gws
+content-length: 220
+x-xss-protection: 0
+x-frame-options: SAMEORIGIN
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+Exit status: 0
+
+============================================================
+COMMAND [2]: nc -zv rajasthan.gov.in 443
+TIME: 2026-08-22 03:00:36
+============================================================
+$ nc -zv rajasthan.gov.in 443
+Warning: inverse host lookup failed for 10.70.240.162: Unknown host
+rajasthan.gov.in [10.70.240.162] 443 (https) open
+Exit status: 0
+
+============================================================
+COMMAND [3]: nc _zv www.google.com
+TIME: 2026-08-22 03:01:31
+============================================================
+$ nc _zv www.google.com
+_zv: forward host lookup failed: Unknown host
+Exit status: 1
+
+============================================================
+COMMAND [1]: nc -zv www.sso.rajasthan.gov.in 443
+TIME: 2026-08-22 03:06:08
+============================================================
+$ nc -zv www.sso.rajasthan.gov.in 443
+www.sso.rajasthan.gov.in: forward host lookup failed: Unknown host
+Exit status: 1
+
+============================================================
+COMMAND [2]: nc -zv 172.20.1.15 443
+TIME: 2026-08-22 03:06:35
+============================================================
+$ nc -zv 172.20.1.15 443
+Warning: forward host lookup failed for pidns.rajasthan.gov.in: Unknown host
+pidns.rajasthan.gov.in [172.20.1.15] 443 (https) : Connection refused
+Exit status: 1
+
+============================================================
+COMMAND [3]: nc -zv www.google.com 443
+TIME: 2026-08-22 03:07:28
+============================================================
+$ nc -zv www.google.com 443
+Warning: inverse host lookup failed for 142.251.154.119: Unknown host
+Warning: inverse host lookup failed for 142.251.150.119: Unknown host
+Warning: inverse host lookup failed for 142.251.151.119: Unknown host
+Warning: inverse host lookup failed for 142.251.153.119: Unknown host
+Warning: inverse host lookup failed for 142.251.152.119: Unknown host
+Warning: inverse host lookup failed for 142.251.156.119: Unknown host
+Warning: inverse host lookup failed for 142.251.155.119: Unknown host
+Warning: inverse host lookup failed for 142.251.157.119: Unknown host
+www.google.com [142.251.154.119] 443 (https) open
+Exit status: 0
+
+============================================================
+COMMAND [4]: sudo journalctl -u ssh -n 20
+TIME: 2026-08-22 03:11:21
+============================================================
+$ sudo journalctl -u ssh -n 20
+Aug 21 06:44:46 kali systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Aug 21 06:44:46 kali sshd[18635]: Server listening on 0.0.0.0 port 22.
+Aug 21 06:44:46 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Aug 21 06:44:46 kali sshd[18635]: Server listening on :: port 22.
+Aug 21 06:49:44 kali sshd[18635]: Received signal 15; terminating.
+Aug 21 06:49:44 kali systemd[1]: Stopping ssh.service - OpenBSD Secure Shell server...
+Aug 21 06:49:44 kali systemd[1]: ssh.service: Deactivated successfully.
+Aug 21 06:49:44 kali systemd[1]: Stopped ssh.service - OpenBSD Secure Shell server.
+Exit status: 0

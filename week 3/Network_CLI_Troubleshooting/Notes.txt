@@ -1,0 +1,32 @@
+WEEK 3 — NOTES
+
+Interface:
+`ip link` checks interfaces and link state. The lab showed eth0 as UP and LOWER_UP.
+
+Routing:
+`ip route get <destination>` shows the route selected for a particular destination.
+Observed gateway: 10.0.2.2
+Interface: eth0
+Source IP: 10.0.2.15
+
+Ports:
+`ss -tulpn` showed TCP port 22 listening through sshd, PID 18635.
+
+Processes:
+`pgrep`, `ps` and `ps -fp <PID>` identify and inspect running processes.
+
+Services:
+`systemctl status ssh` showed SSH had started successfully and later became inactive/dead. The journal recorded signal 15 and successful deactivation.
+
+DNS:
+`/etc/resolv.conf` contained 172.20.1.15, 172.20.1.5 and 8.8.8.8 as configured DNS servers.
+`dig www.google.com` successfully returned multiple A records using DNS server 172.20.1.15.
+
+Public DNS observation:
+1.1.1.1 DNS query timed out, ping showed 100% packet loss, and TCP/443 returned Connection refused. The local gateway 10.0.2.2 remained reachable. These are test-specific observations and do not by themselves prove that the Internet is unavailable.
+
+HTTP:
+`curl -I https://google.com` returned HTTP/2 301 and redirected to https://www.google.com/.
+
+Troubleshooting principle:
+Do not rely on one test. Correlate interface, route, port, process, service, DNS, connectivity, HTTP and logs.

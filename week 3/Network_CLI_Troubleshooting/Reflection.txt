@@ -1,0 +1,17 @@
+WEEK 3 — REFLECTION
+
+1. What was the state of the main network interface?
+2. What gateway and source IP were selected for external traffic?
+3. What does ss -tulpn show?
+4. What was the relationship between port 22, sshd and PID 18635?
+5. What is the difference between a process and a service?
+6. What did systemctl status ssh reveal?
+7. Which DNS servers were configured?
+8. Which DNS server answered the successful dig query?
+9. What happened when 1.1.1.1 was tested?
+10. Why does one failed network test not automatically prove that the Internet is down?
+11. What does HTTP status 301 mean?
+12. What additional information does curl -v provide compared with curl -I?
+13. What information can journalctl provide?
+14. Which Week 3 command was most useful?
+15. Which troubleshooting concept needs more practice?

@@ -1,0 +1,73 @@
+WEEK 3 — QUIZ
+
+1. Which command shows network interface state?
+A. ip link
+B. dig
+C. curl
+D. journalctl
+
+2. Which command shows the route for a specific destination?
+A. ip addr
+B. ip route get
+C. ss
+D. host
+
+3. Which ss option shows processes?
+A. -t
+B. -u
+C. -p
+D. -n
+
+4. Which command searches for a running process by name?
+A. pgrep
+B. dig
+C. curl
+D. host
+
+5. Which command checks a systemd service?
+A. systemctl status
+B. ps status
+C. service-list
+D. netstat status
+
+6. Which file contains resolver configuration?
+A. /etc/hosts
+B. /etc/resolv.conf
+C. /etc/network
+D. /etc/dns.conf
+
+7. Which tool performs detailed DNS queries?
+A. dig
+B. chmod
+C. ss
+D. ps
+
+8. What does nc -zv primarily do?
+A. Edit a file
+B. Test TCP port connectivity
+C. Capture packets
+D. Change a route
+
+9. What does curl -I request?
+A. HTTP response headers
+B. DNS records
+C. Routing table
+D. Process information
+
+10. Which command reads systemd journal logs?
+A. journalctl
+B. logcat
+C. syslog-read
+D. pslog
+
+ANSWER KEY
+1-A
+2-B
+3-C
+4-A
+5-A
+6-B
+7-A
+8-B
+9-A
+10-A

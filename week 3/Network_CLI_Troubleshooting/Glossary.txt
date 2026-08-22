@@ -1,0 +1,22 @@
+WEEK 3 — GLOSSARY
+
+Interface — Network connection point such as eth0.
+Link State — Operational state of an interface, such as UP or DOWN.
+Route — Rule describing how traffic reaches a destination.
+Gateway — Next-hop device used to forward traffic.
+Socket — Endpoint used by network applications.
+Listening — Waiting for incoming connections on a port.
+PID — Process Identifier.
+Process — Running instance of a program.
+Service — Managed background program, commonly controlled by systemd.
+DNS — Domain Name System.
+Nameserver — DNS server used to resolve names.
+TCP — Transmission Control Protocol.
+Port — Numbered endpoint associated with a network service.
+Netcat — Network utility used for connectivity/port testing.
+HTTP — Hypertext Transfer Protocol.
+HTTPS — HTTP protected by TLS.
+HTTP 301 — Permanent redirect response.
+Verbose — Detailed diagnostic output.
+Journal — systemd's central log collection.
+Troubleshooting — Systematic process of identifying and isolating a problem.

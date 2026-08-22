@@ -1,0 +1,22 @@
+WEEK 3 — SCREENSHOT CHECKLIST
+
+Screenshots captured during the practical:
+
+[ ] ip link
+[ ] ip route get
+[ ] ss -tulpn
+[ ] pgrep / ps
+[ ] systemctl status ssh
+[ ] resolv.conf
+[ ] dig
+[ ] nslookup
+[ ] host
+[ ] nc port test
+[ ] curl -I
+[ ] curl -v
+[ ] journalctl
+[ ] traceroute / tracepath
+
+Store screenshots in:
+Screenshots/
+

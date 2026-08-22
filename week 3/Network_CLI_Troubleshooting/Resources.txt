@@ -1,0 +1,19 @@
+WEEK 3 — RESOURCES
+
+Useful manual pages:
+man ip
+man ss
+man pgrep
+man ps
+man systemctl
+man journalctl
+man dig
+man nslookup
+man host
+man nc
+man curl
+man traceroute
+man tracepath
+
+Lab environment:
+Kali Linux running in VirtualBox

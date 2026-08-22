@@ -817,3 +817,80 @@
 2026-08-21 11:25:14.842 - HotkeyManager started.
 2026-08-21 11:25:14.843 - WatchFolderManager started.
 2026-08-21 11:25:14.857 - Startup time: 101288 ms
+2026-08-21 16:47:59.648 - ShareX closing.
+2026-08-21 16:47:59.681 - ApplicationConfig save started: D:\cyber-labs\ApplicationConfig.json
+2026-08-21 16:47:59.921 - ApplicationConfig save successful: D:\cyber-labs\ApplicationConfig.json
+2026-08-21 16:47:59.922 - UploadersConfig save started: D:\cyber-labs\UploadersConfig.json
+2026-08-21 16:47:59.985 - UploadersConfig save successful: D:\cyber-labs\UploadersConfig.json
+2026-08-21 16:47:59.987 - HotkeysConfig save started: D:\cyber-labs\HotkeysConfig.json
+2026-08-21 16:48:00.010 - HotkeysConfig save successful: D:\cyber-labs\HotkeysConfig.json
+2026-08-21 16:48:00.010 - ShareX closed.
+2026-08-22 10:48:47.885 - ShareX starting.
+2026-08-22 10:48:47.887 - Version: 21.0
+2026-08-22 10:48:47.887 - Build: MicrosoftStore
+2026-08-22 10:48:47.888 - Command line: "C:\Program Files\WindowsApps\19568ShareX.ShareX_21.0.0.0_x64__egrzcvs15399j\ShareX.dll"
+2026-08-22 10:48:47.888 - Personal path: D:\cyber-labs
+2026-08-22 10:48:47.888 - Personal path detection method: PersonalPath.cfg file (C:\Users\Admin\Documents\ShareX\PersonalPath.cfg)
+2026-08-22 10:48:47.889 - Operating system: Windows 10 Pro (64-bit)
+2026-08-22 10:48:47.890 - .NET version: 9.0.17
+2026-08-22 10:48:47.890 - Running as elevated process: False
+2026-08-22 10:48:47.942 - Flags: SilentRun
+2026-08-22 10:48:47.942 - Avalonia init started.
+2026-08-22 10:48:48.319 - Avalonia init finished.
+2026-08-22 10:48:48.338 - ApplicationConfig load started: D:\cyber-labs\ApplicationConfig.json
+2026-08-22 10:48:48.769 - ApplicationConfig load finished: D:\cyber-labs\ApplicationConfig.json
+2026-08-22 10:48:48.898 - Language changed to: English (India)
+2026-08-22 10:48:48.898 - UploadersConfig load started: D:\cyber-labs\UploadersConfig.json
+2026-08-22 10:48:48.899 - MainForm init started.
+2026-08-22 10:48:48.973 - UploadersConfig load finished: D:\cyber-labs\UploadersConfig.json
+2026-08-22 10:48:48.975 - HotkeysConfig load started: D:\cyber-labs\HotkeysConfig.json
+2026-08-22 10:48:49.000 - HotkeysConfig load finished: D:\cyber-labs\HotkeysConfig.json
+2026-08-22 10:48:49.455 - MainForm init finished.
+2026-08-22 10:48:49.559 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2026-08-22 10:48:49.559 - Hotkey registered: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-08-22 10:48:49.559 - Unable to register hotkey: Alt + Print Screen
+2026-08-22 10:48:49.559 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2026-08-22 10:48:49.559 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2026-08-22 10:48:49.559 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2026-08-22 10:57:39.327 - ShareX starting.
+2026-08-22 10:57:39.330 - Version: 21.0
+2026-08-22 10:57:39.330 - Build: MicrosoftStore
+2026-08-22 10:57:39.330 - Command line: "C:\Program Files\WindowsApps\19568ShareX.ShareX_21.0.0.0_x64__egrzcvs15399j\ShareX.dll"
+2026-08-22 10:57:39.330 - Personal path: D:\cyber-labs
+2026-08-22 10:57:39.330 - Personal path detection method: PersonalPath.cfg file (C:\Users\Admin\Documents\ShareX\PersonalPath.cfg)
+2026-08-22 10:57:39.331 - Operating system: Windows 10 Pro (64-bit)
+2026-08-22 10:57:39.332 - .NET version: 9.0.17
+2026-08-22 10:57:39.332 - Running as elevated process: False
+2026-08-22 10:57:39.389 - Flags: SilentRun
+2026-08-22 10:57:39.389 - Avalonia init started.
+2026-08-22 10:57:39.795 - Avalonia init finished.
+2026-08-22 10:57:39.828 - ApplicationConfig load started: D:\cyber-labs\ApplicationConfig.json
+2026-08-22 10:57:40.408 - ApplicationConfig load finished: D:\cyber-labs\ApplicationConfig.json
+2026-08-22 10:57:40.566 - Language changed to: English (India)
+2026-08-22 10:57:40.566 - UploadersConfig load started: D:\cyber-labs\UploadersConfig.json
+2026-08-22 10:57:40.566 - MainForm init started.
+2026-08-22 10:57:40.666 - UploadersConfig load finished: D:\cyber-labs\UploadersConfig.json
+2026-08-22 10:57:40.668 - HotkeysConfig load started: D:\cyber-labs\HotkeysConfig.json
+2026-08-22 10:57:40.697 - HotkeysConfig load finished: D:\cyber-labs\HotkeysConfig.json
+2026-08-22 10:57:41.249 - MainForm init finished.
+2026-08-22 10:57:41.350 - Hotkey registered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2026-08-22 10:57:41.350 - Hotkey registered: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-08-22 10:57:41.350 - Unable to register hotkey: Alt + Print Screen
+2026-08-22 10:57:41.350 - Hotkey register failed: Hotkey: Alt + Print Screen, Description: Capture active window, Job: ActiveWindow
+2026-08-22 10:57:41.350 - Hotkey registered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2026-08-22 10:57:41.350 - Hotkey registered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2026-08-22 10:57:51.200 - HotkeyManager started.
+2026-08-22 10:57:51.200 - WatchFolderManager started.
+2026-08-22 10:57:51.212 - Startup time: 12214 ms
+2026-08-22 10:58:02.680 - Hotkey unregistered: Hotkey: Ctrl + Print Screen, Description: Capture region, Job: RectangleRegion
+2026-08-22 10:58:02.680 - Hotkey unregistered: Hotkey: Print Screen, Description: Capture entire screen, Job: PrintScreen
+2026-08-22 10:58:02.680 - Hotkey unregistered: Hotkey: Shift + Print Screen, Description: Start/Stop screen recording, Job: ScreenRecorder
+2026-08-22 10:58:02.680 - Hotkey unregistered: Hotkey: Ctrl + Shift + Print Screen, Description: Start/Stop screen recording (GIF), Job: ScreenRecorderGIF
+2026-08-22 10:58:02.764 - ShareX closing.
+2026-08-22 10:58:02.768 - ApplicationConfig save started: D:\cyber-labs\ApplicationConfig.json
+2026-08-22 10:58:03.244 - ApplicationConfig save successful: D:\cyber-labs\ApplicationConfig.json
+2026-08-22 10:58:03.245 - UploadersConfig save started: D:\cyber-labs\UploadersConfig.json
+2026-08-22 10:58:03.438 - UploadersConfig save successful: D:\cyber-labs\UploadersConfig.json
+2026-08-22 10:58:03.439 - HotkeysConfig save started: D:\cyber-labs\HotkeysConfig.json
+2026-08-22 10:58:03.689 - HotkeysConfig save successful: D:\cyber-labs\HotkeysConfig.json
+2026-08-22 10:58:03.689 - ShareX closed.

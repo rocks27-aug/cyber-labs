@@ -1,0 +1,62 @@
+WEEK 3 — COMMANDS
+
+1. ip link
+Display network interfaces and link state.
+
+2. ip route get 8.8.8.8
+Show the route Linux selects for a specific destination.
+
+3. ip route get 1.1.1.1
+Show the selected route to 1.1.1.1.
+
+4. sudo ss -tulpn
+Display listening TCP/UDP sockets and associated processes.
+-t TCP, -u UDP, -l listening, -p process, -n numeric.
+
+5. pgrep -a sshd
+Find sshd processes and show PID plus command line.
+
+6. ps aux | grep ssh
+List processes and filter entries containing ssh.
+
+7. ps -fp 18635
+Show detailed information for PID 18635.
+
+8. sudo systemctl status ssh
+Show current SSH service status and recent events.
+
+9. cat /etc/resolv.conf
+Display DNS resolver configuration and nameservers.
+
+10. dig www.google.com
+Perform a detailed DNS query.
+
+11. nslookup www.google.com
+Perform a DNS lookup using nslookup.
+
+12. host www.google.com
+Perform a simple DNS lookup.
+
+13. nc -zv 1.1.1.1 443
+Test TCP connectivity to port 443.
+-z port-checking mode; -v verbose.
+
+14. curl -I https://google.com
+Request HTTP response headers only.
+
+15. curl -v https://google.com
+Show verbose HTTP/HTTPS connection details.
+
+16. sudo journalctl -u ssh -n 20
+Show the latest 20 logs for the SSH service.
+
+17. journalctl -n 30
+Show the latest 30 system journal entries.
+
+18. traceroute example.com
+Show network hops toward a destination.
+
+19. tracepath example.com
+Trace the network path and related information.
+
+Use commands only on systems/networks you own or are authorized to test.

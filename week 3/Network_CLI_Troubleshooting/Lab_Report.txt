@@ -1,0 +1,24 @@
+WEEK 3 — NETWORK CLI & TROUBLESHOOTING LAB REPORT
+
+Environment:
+Kali Linux running in VirtualBox.
+
+Objective:
+Practice network troubleshooting using Linux command-line tools.
+
+Summary:
+- eth0 was UP and LOWER_UP.
+- External route used gateway 10.0.2.2 through eth0 with source IP 10.0.2.15.
+- SSH was observed listening on TCP port 22 with sshd PID 18635.
+- SSH service later became inactive; system logs recorded signal 15 and successful deactivation.
+- DNS configuration included 172.20.1.15, 172.20.1.5 and 8.8.8.8.
+- `dig www.google.com` successfully resolved using 172.20.1.15.
+- Direct tests to 1.1.1.1 produced DNS timeout, ICMP packet loss and TCP/443 connection refusal, while the local gateway remained reachable.
+- `curl -I https://google.com` returned HTTP/2 301 and redirected to https://www.google.com/.
+
+Conclusion:
+The practical demonstrated layered troubleshooting:
+Interface → Routing → Ports → Processes → Services → DNS → Connectivity → HTTP → Logs.
+
+Screenshots:
+See the Screenshots/ directory for practical evidence.
