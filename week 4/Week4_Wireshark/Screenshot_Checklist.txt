@@ -1,0 +1,11 @@
+# Week 04 — Screenshot Checklist
+
+Save screenshots in this folder and use clear names:
+- `01_icmp_request_reply.png`
+- `02_dns_query_response.png`
+- `03_tcp_three_way_handshake.png`
+- `04_http_request_response.png`
+- `05_tls_client_hello.png`
+- `06_tls_application_data.png`
+
+Keep the relevant display filter and packet details visible. Avoid capturing passwords, tokens, private messages, or unrelated sensitive traffic.

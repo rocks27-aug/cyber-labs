@@ -1,0 +1,32 @@
+# Week 04 — Lab Report
+
+## Environment
+Kali Linux in VirtualBox; capture interface `eth0`.
+
+## Observations
+
+### ICMP
+- Command: `ping -c 4 10.0.2.2`
+- Request: `10.0.2.15` → `10.0.2.2`
+- Reply: `10.0.2.2` → `10.0.2.15`
+
+### DNS
+- Command: `dig www.google.com`
+- Filter: `dns`
+- A response contained multiple IPv4 addresses.
+- One observed address: `142.251.150.119`.
+- A later CNAME query returned `SERVFAIL`; the cause was not established.
+
+### TCP
+- Command: `curl -I https://example.com`
+- Observed `[SYN]`, `[SYN, ACK]`, and `[ACK]`.
+- Handshake order: SYN → SYN-ACK → ACK.
+
+### HTTP/HTTPS
+- Commands: `curl -I http://example.com` and `curl -I https://example.com`
+- Observed HTTP `HEAD / HTTP/1.1` and `HTTP/1.1 200 OK` in the capture.
+- TLS messages included Client Hello, Server Hello, Certificate, and Application Data.
+- The server-name/SNI extension was located in a Client Hello packet.
+
+## Conclusion
+The lab practised packet capture and analysis across ICMP, DNS, TCP, HTTP, HTTPS, and TLS. The CNAME `SERVFAIL` result is recorded as an observation only; its cause remains unverified.

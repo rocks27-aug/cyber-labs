@@ -1,0 +1,54 @@
+# Week 04 — Commands and Display Filters
+
+## ICMP
+```bash
+ping -c 4 10.0.2.2
+```
+- `ping`: sends ICMP echo requests.
+- `-c 4`: sends four requests.
+- `10.0.2.2`: gateway observed in this VirtualBox lab.
+
+Wireshark filter: `icmp`
+
+## DNS
+```bash
+dig www.google.com
+dig www.google.com A
+dig www.google.com AAAA
+dig www.google.com CNAME
+```
+- `dig`: performs DNS queries.
+- `A`: IPv4 records.
+- `AAAA`: IPv6 records.
+- `CNAME`: canonical-name records.
+
+Wireshark filter: `dns`
+
+## HTTP/HTTPS
+```bash
+curl -I http://example.com
+curl -I https://example.com
+```
+- `curl`: sends a request to a URL.
+- `-I`: requests response headers only.
+
+Wireshark filters:
+```text
+http
+tls
+tcp.port == 443
+```
+
+## TCP flags
+Show packets with SYN set:
+```text
+tcp.flags.syn == 1
+```
+
+Show initial SYN packets where ACK is not set:
+```text
+tcp.flags.syn == 1 && tcp.flags.ack == 0
+```
+
+## Notes
+These are Wireshark display filters, not capture filters. If no packets appear, verify capture is running on the correct interface and generate new traffic after starting capture. Exact addresses and packet availability vary by session.

@@ -1,0 +1,24 @@
+# Week 04 — Revision Quiz
+
+1. Which display filter shows ICMP packets?
+2. What is the difference between A and AAAA records?
+3. Put the TCP handshake flags in order.
+4. What does `curl -I https://example.com` request?
+5. Which display filter can show TLS packets?
+6. Does HTTPS normally expose full application content in an ordinary packet capture?
+7. What can SNI identify in a TLS Client Hello?
+8. What does `SERVFAIL` mean, and how does it differ from an empty answer with `NOERROR`?
+9. Why start capture before running `curl` or `ping`?
+10. What is the difference between a capture filter and a display filter?
+
+## Answer key
+1. `icmp`
+2. A is for IPv4; AAAA is for IPv6.
+3. SYN → SYN-ACK → ACK.
+4. Response headers only.
+5. `tls`
+6. Normally no; TLS application data is encrypted.
+7. The requested hostname, when visible.
+8. SERVFAIL indicates resolver failure; NOERROR with no answer means the query succeeded but no requested record was returned.
+9. Otherwise the packets may pass before capture begins.
+10. Capture filters limit what is captured; display filters limit what is shown.

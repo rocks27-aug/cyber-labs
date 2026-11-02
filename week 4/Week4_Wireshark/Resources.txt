@@ -1,0 +1,7 @@
+# Week 04 — Resources
+
+- Wireshark User's Guide: https://www.wireshark.org/docs/wsug_html_chunked/
+- Wireshark Display Filter Reference: https://www.wireshark.org/docs/dfref/
+- Wireshark official website: https://www.wireshark.org/
+
+Only capture traffic on systems and networks you own or are authorised to inspect.

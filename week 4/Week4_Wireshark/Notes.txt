@@ -1,0 +1,15 @@
+# Week 04 — Notes
+
+1. Start capture before generating test traffic.
+2. Select `eth0` in this Kali VirtualBox lab.
+3. `icmp` displays ICMP packets.
+4. `dns` displays DNS packets.
+5. `http` displays packets Wireshark dissects as HTTP.
+6. `tls` displays packets Wireshark dissects as TLS.
+7. `tcp.port == 443` displays TCP traffic with source or destination port 443.
+8. TCP three-way handshake: SYN, SYN-ACK, ACK.
+9. A = IPv4; AAAA = IPv6; CNAME = canonical-name alias.
+10. `SERVFAIL` differs from an empty answer with `NOERROR`.
+11. HTTPS uses TLS to protect application data; some metadata may remain visible.
+12. SNI may reveal the requested hostname when the extension is present and not concealed by ECH.
+13. Exact IP addresses and packet numbers can change between sessions.
