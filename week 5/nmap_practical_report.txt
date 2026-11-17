@@ -1,0 +1,99 @@
+====================================
+       NMAP PRACTICAL REPORT
+Target: 127.0.0.1
+Date: Tue Nov 17 05:46:28 AM EST 2026
+====================================
+Nmap version 7.99 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+-e 
+
+===== Basic Scan =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000011s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.17 seconds
+-e 
+
+===== All TCP Ports =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000011s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 3.50 seconds
+-e 
+
+===== SSH Port Scan =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00014s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 0.27 seconds
+-e 
+
+===== Service Version Detection =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0011s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.4p1 Debian 4 (protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 0.71 seconds
+-e 
+
+===== OS Detection =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000083s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+Aggressive OS guesses: Linux 5.0 - 6.2 (97%), Linux 3.7 - 4.19 (93%), Linux 2.6.32 (93%), Linux 6.8 (93%), Linux 3.8 - 3.9 (92%), Linux 5.10 - 5.11 (92%), Linux 5.7 (92%), Linux 5.8 (92%), Linux 4.1 (92%), Linux 5.15 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 4.96 seconds
+-e 
+
+===== Default Scripts =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00028s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+Nmap done: 1 IP address (1 host up) scanned in 1.26 seconds
+-e 
+
+===== Aggressive Scan =====
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-17 05:46 -0500
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00012s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 10.4p1 Debian 4 (protocol 2.0)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 - 6.2 (97%), Linux 3.7 - 4.19 (93%), Linux 6.8 (93%), Linux 2.6.32 (93%), Linux 3.8 - 3.9 (93%), Linux 5.15 (93%), Linux 5.8 (92%), Linux 4.10 (92%), Linux 5.10 - 5.11 (91%), Asus RT-N10 router or AXIS 211A Network Camera (Linux 2.6) (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 0 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 6.10 seconds
+-e 
+
+===== PRACTICAL COMPLETED =====
