@@ -1,0 +1,7 @@
+LEARNING RESOURCES
+
+- Official Nmap Reference Guide: https://nmap.org/book/man.html
+- Nmap NSE documentation: https://nmap.org/book/nse.html
+- Nmap download and documentation: https://nmap.org/
+
+Use official documentation to understand options before running scans. Practise only against localhost, systems you own, or systems for which you have explicit authorization.

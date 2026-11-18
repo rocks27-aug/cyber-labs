@@ -1,0 +1,7 @@
+WEEK 5 – PRACTICAL REFLECTION
+
+In this practical, I used Nmap 7.99 against the local Kali host (127.0.0.1). I learned how to perform a basic scan, scan all TCP ports, check a specific port, identify a service/version, attempt OS detection, run default scripts and perform an aggressive scan.
+
+The main finding was TCP port 22 open, running SSH. Nmap identified the service as OpenSSH 10.4p1 Debian 4. OS detection suggested Linux but did not identify an exact match. This showed me that automated fingerprinting is an estimate and depends on scan conditions.
+
+Next, I should practise the additional scan types in my authorized lab and save separate evidence for each one.

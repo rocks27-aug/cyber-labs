@@ -1,0 +1,24 @@
+WEEK 5 – NMAP QUIZ
+
+1. What does 127.0.0.1 represent?
+2. Which Nmap option scans all TCP ports?
+3. Which option attempts service/version detection?
+4. Which option attempts OS detection?
+5. What does -sC run?
+6. Which service commonly uses TCP port 22?
+7. Why might OS detection fail to identify an exact OS?
+8. What is the difference between -sS and -sT?
+9. What is the main purpose of -sA?
+10. Which option saves output in normal, XML and grepable formats?
+
+ANSWER KEY
+1. The local loopback host.
+2. -p-
+3. -sV
+4. -O
+5. Nmap's default NSE scripts.
+6. SSH.
+7. Fingerprinting conditions and available responses may be insufficient or non-ideal.
+8. -sS is a TCP SYN scan; -sT uses the operating system's connect() call.
+9. Firewall rule mapping/filtering analysis; it is not an open-port scan.
+10. -oA

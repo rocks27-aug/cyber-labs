@@ -1,0 +1,49 @@
+WEEK 5 – NMAP PRACTICAL LAB REPORT
+
+1. Aim
+To use Nmap to scan the local Kali host and identify available TCP ports and the service running on an open port.
+
+2. Environment
+- Operating system: Kali Linux (as shown in the terminal screenshots)
+- Nmap version: 7.99
+- Target: 127.0.0.1
+- Date shown in supplied report: 17 November 2026
+
+3. Procedure and observations
+
+A. Basic scan
+Command: nmap 127.0.0.1
+Observation: Host was up. Nmap reported 22/tcp open (ssh), with 999 closed TCP ports.
+
+B. All TCP ports
+Command: nmap -p- 127.0.0.1
+Observation: Nmap scanned all 65,535 TCP ports and reported 22/tcp open; 65,534 were closed.
+
+C. SSH port scan
+Command: nmap -p 22 127.0.0.1
+Observation: 22/tcp was open and identified as SSH.
+
+D. Service/version detection
+Command: nmap -sV 127.0.0.1
+Observation: Nmap identified OpenSSH 10.4p1 Debian 4 (protocol 2.0) on port 22.
+
+E. OS detection
+Command: sudo nmap -O 127.0.0.1
+Observation: Nmap returned several possible Linux OS families/versions but no exact OS match. The report notes non-ideal test conditions.
+
+F. Default scripts
+Command: nmap -sC 127.0.0.1
+Observation: Port 22/tcp was open. No additional script output was shown in the captured report.
+
+G. Aggressive scan
+Command: sudo nmap -A 127.0.0.1
+Observation: Nmap identified OpenSSH 10.4p1 Debian 4. It also returned OS guesses, but warned that OS scan results may be unreliable because it could not find at least one open and one closed port.
+
+4. Result
+The local host was reachable. The captured scans consistently showed TCP port 22 open with SSH. Service detection identified OpenSSH 10.4p1 Debian 4. OS fingerprinting did not produce an exact match.
+
+5. Limitations
+Only the scans listed above are evidenced by the supplied report. The report does not prove that the other suggested scans (UDP, SYN, ACK, Fast, Top Ports) were run. Localhost scanning also provides limited network-distance information because the target is the same machine.
+
+6. Evidence
+See nmap_practical_report.txt and the two screenshots in Screenshots/.

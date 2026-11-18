@@ -1,0 +1,21 @@
+WEEK 5 – SCREENSHOT CHECKLIST
+
+Included evidence:
+[✓] 01_Nmap_Aggressive_Default_Scripts.png
+[✓] 02_Nmap_Default_Scripts_Aggressive_Scan.png
+
+Recommended additional evidence for a future run:
+[ ] Nmap version output
+[ ] Basic scan output
+[ ] All TCP ports output
+[ ] Service/version detection output
+[ ] OS detection output
+[ ] Default scripts output
+[ ] Aggressive scan output
+[ ] Fast scan output
+[ ] UDP scan output
+[ ] SYN scan output
+[ ] ACK scan output
+[ ] Output files (Nmap, XML, Grepable)
+
+Note: The two included images are the screenshots supplied in this conversation. The additional checklist items are not claimed as captured.

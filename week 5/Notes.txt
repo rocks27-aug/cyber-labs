@@ -1,0 +1,17 @@
+NMAP – QUICK NOTES
+
+- Nmap is a network exploration and security auditing tool.
+- 127.0.0.1 is the IPv4 loopback address (this machine).
+- A port marked open means an application is accepting connections on that port.
+- 22/tcp is conventionally used by SSH.
+- -sV performs service/version detection; the version string is Nmap's identification result.
+- -O attempts OS fingerprinting. It may be inconclusive, especially with limited open/closed port responses.
+- -sC runs Nmap's default NSE scripts.
+- -A combines several detection features and can be more intrusive/noisy than a basic scan.
+- UDP scanning may take longer and can return open|filtered when no response is received.
+- A TCP ACK scan (-sA) is mainly useful for firewall rule mapping; it does not directly classify ports as open.
+- Use sudo for scans that require raw packet privileges.
+- A report's literal '-e' lines are formatting artifacts from the shell script's echo statements; they do not represent Nmap findings.
+
+Safety:
+Only scan your own lab or targets for which you have explicit authorization.

@@ -1,0 +1,61 @@
+WEEK 5 – NMAP COMMANDS
+
+Target used in the captured practical:
+  127.0.0.1  (localhost)
+
+Commands present in the supplied report:
+
+1. Nmap version
+   nmap --version
+
+2. Basic scan
+   nmap 127.0.0.1
+
+3. Scan all TCP ports
+   nmap -p- 127.0.0.1
+
+4. Scan SSH port only
+   nmap -p 22 127.0.0.1
+
+5. Service/version detection
+   nmap -sV 127.0.0.1
+
+6. OS detection
+   sudo nmap -O 127.0.0.1
+
+7. Default NSE scripts
+   nmap -sC 127.0.0.1
+
+8. Aggressive scan
+   sudo nmap -A 127.0.0.1
+
+Useful additional commands for a future authorized lab session
+(these are practice suggestions, NOT verified as executed in the supplied report):
+
+   nmap -F 127.0.0.1
+   nmap --top-ports 20 127.0.0.1
+   sudo nmap -sS 127.0.0.1
+   sudo nmap -sU --top-ports 20 127.0.0.1
+   sudo nmap -sA -p 22 127.0.0.1
+   nmap --open 127.0.0.1
+   nmap --reason 127.0.0.1
+   nmap -sV -p 22 -oA final_scan 127.0.0.1
+
+Flags:
+  -p-          Scan all TCP ports (1–65535)
+  -p 22        Scan port 22 only
+  -sV          Probe open ports to identify service/version
+  -O           Attempt OS fingerprinting
+  -sC          Run the default NSE script set
+  -A           Enable OS detection, version detection, default scripts and traceroute
+  -F           Fast scan (fewer ports)
+  -sS          TCP SYN scan (requires privileges)
+  -sT          TCP connect scan
+  -sU          UDP scan (can be slow)
+  -sA          TCP ACK scan; useful for firewall rule mapping, not open-port discovery
+  --open       Show only open (or possibly open) ports
+  --reason     Show why Nmap assigned a port state
+  -oA NAME     Save output in normal, XML and grepable formats
+  -sn          Host discovery only; skip port scan
+
+Always use these only on systems/networks you own or are authorized to assess.
