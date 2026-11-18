@@ -74,7 +74,7 @@ Cyber-Labs/
 | Week 2 | Networking_Fundamentals | ✅ Completed  |
 | Week 3 | Network_CLI_Troubleshooting | ✅ Completed  |
 | Week 4 | Wireshark | ✅ Completed  |
-| Week 5 | Wireshark | ✅ Completed  |
+| Week 5 | nmap | ✅ Completed  |
 
 ---
 
