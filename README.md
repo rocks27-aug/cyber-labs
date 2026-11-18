@@ -60,7 +60,6 @@ Cyber-Labs/
 │
 ├── Projects/
 │
-├── Cheatsheets/
 │
 └── Resources/
 ```
@@ -71,12 +70,11 @@ Cyber-Labs/
 
 | Week | Topic | Status |
 |------|-------|--------|
-| Week 1 | Cyber Lab Setup | ✅ Completed |
-| Week 1 | Git & GitHub | ✅ Completed  |
-| Week 1 | Linux Fundamentals | ✅ Completed  |
+| Week 1 | Cyber Lab Setup,Git & GitHub ,Linux Fundamentals | ✅ Completed |
 | Week 2 | Networking_Fundamentals | ✅ Completed  |
 | Week 3 | Network_CLI_Troubleshooting | ✅ Completed  |
 | Week 4 | Wireshark | ✅ Completed  |
+| Week 5 | Wireshark | ✅ Completed  |
 
 ---
 
